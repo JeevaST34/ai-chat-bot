@@ -1,0 +1,75 @@
+"use client";
+
+import { useState, useMemo } from "react";
+import Marquee from "react-fast-marquee";
+import Image from "next/image";
+import {brands} from "@/lib/Constants";
+
+const tabs = [
+  "All",
+  "Retail",
+  "Automotive",
+  "Healthcare",
+  "Finance",
+  "Education",
+  "Real Estate",
+];
+
+ export function BrandMarquee() {
+  const [activeTab, setActiveTab] = useState("All");
+
+  const filteredBrands = useMemo(() => {
+    if (activeTab === "All") return brands;
+    return brands.filter((b) => b.category === activeTab);
+  }, [activeTab]);
+
+  return (
+    <section className="py-16 bg-white">
+      {/* Title */}
+      <h2 className="text-center text-xl font-semibold mb-6">
+        Trusted by <span className="text-blue-600">350+</span> Global Brands
+      </h2>
+
+      {/* Tabs */}
+      <div className="flex flex-wrap justify-center gap-3 mb-10">
+        {tabs.map((tab) => (
+          <button
+            key={tab}
+            onClick={() => setActiveTab(tab)}
+            className={`px-4 py-2 rounded-full text-sm font-medium transition
+              ${
+                activeTab === tab
+                  ? "bg-blue-600 text-white"
+                  : "bg-blue-50 text-blue-600 hover:bg-blue-100"
+              }
+            `}
+          >
+            {tab}
+          </button>
+        ))}
+      </div>
+
+      {/* Marquee */}
+      {filteredBrands.length > 0 ? (
+        <Marquee speed={40} pauseOnHover gradient={false}>
+          {filteredBrands.map((brand, index) => (
+            <div key={index} className="mx-12 flex items-center justify-center">
+              <Image
+                src={brand.logo}
+                alt={brand.name}
+                width={70}
+                height={50}
+                className="object-contain transition"
+              />
+            </div>
+          ))}
+        </Marquee>
+      ) : (
+        <p className="text-center text-gray-500">
+          No brands available for this category
+        </p>
+      )}
+    </section>
+  );
+}
+
