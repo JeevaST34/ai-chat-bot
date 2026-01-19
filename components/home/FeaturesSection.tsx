@@ -30,7 +30,7 @@ export function FeaturesSection() {
             title="Empower users to self-serve with AI-enhanced search"
             description="Integrate our Javascript SDK..."
             btnText="Start optimizing your site for free"
-            image="/images/home/picture.png"
+            image="/images/home/Picture.png"
             layout="stacked"
           />
 
@@ -40,7 +40,7 @@ export function FeaturesSection() {
               title="Unlock insights into your users' search behavior"
               description="Don't let users leave empty-handed..."
               btnText="Start optimizing your site for free"
-              image="/images/home/picture-2.png"
+              image="/images/home/Picture-2.png"
             />
           </div>
         </div>
