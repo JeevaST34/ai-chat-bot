@@ -1,7 +1,7 @@
 "use client";
 
 import FeatureCard from "./FeatureCard";
-import {HeroWithPreview} from "./HeroWithPreview";
+import { HeroWithPreview } from "./HeroWithPreview";
 
 export function FeaturesSection() {
   return (
