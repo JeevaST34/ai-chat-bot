@@ -1,6 +1,6 @@
 import {versions} from '../../lib/Constants';
 
-const VersionControlSection = () => {
+export const VersionControlSection = () => {
   return (
     <section className="w-full py-20 px-6 md:px-16 relative">
       {/* Background (You will add your pattern image here) */}
@@ -51,4 +51,3 @@ const VersionControlSection = () => {
   );
 };
 
-export default VersionControlSection;

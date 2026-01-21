@@ -1,6 +1,7 @@
 
 
 
+import Link from "next/link";
 import { Button } from "../common";
 import Image from "next/image";
 
@@ -22,9 +23,9 @@ export  function Footer() {
           
             <Image src="/images/footer/Link-instagram.png" alt="Instagram" width={24} height={24} className="cursor-pointer" />
             
-            <Image src="/images/footer/Link-facebook.png" alt="Facebook" width={24} height={24} className="cursor-pointer" />
-          <Image src="/images/footer/Link-linkedin.png" alt="LinkedIn" width={24} height={24} className="cursor-pointer" />
-            <Image src="/images/footer/Link-youtube.png" alt="Youtube" width={24} height={24} className="cursor-pointer" />
+            <Image src="/images/footer/Link-Facebook.png" alt="Facebook" width={24} height={24} className="cursor-pointer" />
+          <Image src="/images/footer/Link-Linkedin.png" alt="LinkedIn" width={24} height={24} className="cursor-pointer" />
+            <Image src="/images/footer/Link-Youtube.png" alt="Youtube" width={24} height={24} className="cursor-pointer" />
             
           </div>
         </div>
@@ -34,8 +35,17 @@ export  function Footer() {
           <div className="mb-3">
             <h4 className="text-blue-700 font-bold mb-4">Company</h4>
             <ul className="space-y-2 text-black ">
-              <li className="cursor-pointer hover:underline">Home</li>
-              <li className="cursor-pointer hover:underline">Contact</li>
+              <li className="cursor-pointer hover:underline">
+                 <Link href="/" className="cursor-pointer hover:underline">
+      Home
+      </Link>
+                </li>
+              <li className="cursor-pointer hover:underline">
+                 <Link href="/contact" className="cursor-pointer hover:underline">
+   Contact Us
+      </Link>
+                
+                </li>
             </ul>
           </div>
 
@@ -43,18 +53,40 @@ export  function Footer() {
           <div className="mb-3">
             <h4 className="text-blue-700 font-bold mb-4">Product</h4>
             <ul className="space-y-2 text-black">
-              <li className="cursor-pointer hover:underline">Features</li>
-              <li className="cursor-pointer hover:underline">Integrations</li>
+              <li className="cursor-pointer hover:underline">
+                 <Link href="/features" className="cursor-pointer hover:underline">
+        Features
+      </Link>
+                
+                </li>
+              <li className="cursor-pointer hover:underline">
+                <Link href="/integration" className="cursor-pointer hover:underline">
+        Integrations
+      </Link>
+                </li>
             </ul>
           </div>
 
           {/* Resources */}
           <div className="mb-3">
-            <h4 className="text-blue-700 font-bold mb-4">Resources</h4>
+            <h4 className="text-blue-700 font-bold mb-4">
+              
+                <Link href="/Resources" className="cursor-pointer hover:underline">
+        Resources
+      </Link>
+              </h4>
             <ul className="space-y-2 text-black">
-              <li className="cursor-pointer hover:underline">Knowledge Base</li>
               <li className="cursor-pointer hover:underline">
-                Visitor Insights
+                 <Link href="/knowledgeBase" className="cursor-pointer hover:underline">
+        Knowledge Base
+      </Link>
+                </li>
+              <li className="cursor-pointer hover:underline">
+
+                <Link href="/visitor-insights" className="cursor-pointer hover:underline">
+           Visitor Insights
+      </Link>
+            
               </li>
             </ul>
           </div>
@@ -64,9 +96,18 @@ export  function Footer() {
             <h4 className="text-blue-700 font-bold mb-4">Platform</h4>
             <ul className="space-y-2 text-black">
               <li className="cursor-pointer hover:underline">
-                Analytics & Dashboard
+
+                <Link href="/analytics" className="cursor-pointer hover:underline">
+        Analytics & Dashboard
+      </Link>
+        
               </li>
-              <li className="cursor-pointer hover:underline">Pricing</li>
+              <li className="cursor-pointer hover:underline">
+                 <Link href="/pricing" className="cursor-pointer hover:underline">
+        Pricing
+      </Link>
+                
+                </li>
             </ul>
           </div>
 
@@ -74,8 +115,18 @@ export  function Footer() {
           <div className="mb-3">
             <h4 className="text-blue-700 font-bold mb-4">Support</h4>
             <ul className="space-y-2 text-black">
-              <li className="cursor-pointer hover:underline">FAQ</li>
-              <li className="cursor-pointer hover:underline">Sign Up</li>
+              <li className="cursor-pointer hover:underline">
+                  <Link href="/faq" className="cursor-pointer hover:underline">
+        FAQ
+      </Link>
+                
+                </li>
+              <li className="cursor-pointer hover:underline">
+                
+                <Link href="/signup" className="cursor-pointer hover:underline">
+         Sign Up
+      </Link>
+               </li>
             </ul>
           </div>
         </div>

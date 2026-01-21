@@ -2,6 +2,7 @@
 
 import Marquee from "react-fast-marquee";
 import Image from "next/image";
+import {brands} from "@/lib/Constants";
 
 const topIcons = [
   "/icons/aws.svg",
@@ -38,10 +39,10 @@ export function   ToolsMarquee() {
       </h2>
 
       {/* TOP MARQUEE */}
-      <Marquee speed={35} gradient={false} pauseOnHover className="-mb-7.5">
-        <div className="flex gap-8 px-8">
-          {topIcons.map((icon, i) => (
-            <IconCard key={i} src={icon} />
+      <Marquee speed={35} gradient={false} pauseOnHover autoFill className="-mb-12.5">
+        <div className="flex gap-8 px-8 mb-5">
+          {brands.map((brand, i) => (
+            <IconCard key={i} src={brand.logo} />
           ))}
         </div>
       </Marquee>
@@ -53,8 +54,8 @@ export function   ToolsMarquee() {
           <div className="w-32 h-32 rounded-full border border-blue-300 absolute" />
         </div>
 
-        <div className="relative z-10 w-20 h-20 rounded-2xl bg-blue-600 flex items-center justify-center shadow-xl">
-          <Image src="/icons/center.svg" alt="Core" width={40} height={40} />
+        <div className="relative z-10 w-20 h-20 rounded-2xl bg-[#1476fe] flex items-center justify-center shadow-xl">
+          <Image src="/images/home/Tars Logo.svg" alt="Core" width={40} height={40} />
         </div>
       </div>
 
@@ -64,11 +65,12 @@ export function   ToolsMarquee() {
         gradient={false}
         direction="right"
         pauseOnHover
+        autoFill
         className="-mt-7.5"
       >
         <div className="flex gap-8 px-8 mb-3.75">
-          {bottomIcons.map((icon, i) => (
-            <IconCard key={i} src={icon} />
+          {brands.map((brand, i) => (
+            <IconCard key={i} src={brand.logo} />
           ))}
         </div>
       </Marquee>

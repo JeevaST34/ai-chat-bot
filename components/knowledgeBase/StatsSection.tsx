@@ -1,6 +1,6 @@
 import {stats} from "../../lib/Constants";
 
-const StatsSection = () => {
+export const StatsSection = () => {
   return (
     <div className="w-full grid grid-cols-1 md:grid-cols-4 gap-6 px-6 md:px-16 py-6 md:py-16">
       {stats.map((item, index) => (
@@ -28,5 +28,3 @@ const StatsSection = () => {
     </div>
   );
 };
-
-export default StatsSection;

@@ -1,7 +1,7 @@
 "use client";
 
 import FeatureCard from "./FeatureCard";
-import { HeroWithPreview } from "./HeroWithPreview";
+import {HeroWithPreview} from "./HeroWithPreview";
 
 export function FeaturesSection() {
   return (
@@ -12,7 +12,7 @@ export function FeaturesSection() {
           title="Introducing AI Chatbot, your AI-powered site search"
           subtitle="Boost conversions and lighten the load on your support team"
           buttonText="Start optimizing your site for free"
-          image="/images/home/Margin.png"
+          image="/images/home/margin.png"
         />
         {/* GRID */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">

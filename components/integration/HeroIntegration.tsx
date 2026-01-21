@@ -1,4 +1,4 @@
-function HeroIntegration() {
+export function HeroIntegration() {
   return (
     <section className="bg-linear-to-b from-[#EEF4FF] via-[#F3F7FF] to-[#FFF5F0]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-16 py-16 sm:py-20">
@@ -31,4 +31,4 @@ function HeroIntegration() {
   );
 }
 
-export default HeroIntegration;
+

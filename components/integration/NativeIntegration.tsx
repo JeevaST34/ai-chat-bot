@@ -1,6 +1,6 @@
 import { integrations } from "@/lib/Constants";
 
-export default function NativeIntegration() {
+export function NativeIntegration() {
 
   return (
     <section className="bg-[#F9F9FF] py-10">

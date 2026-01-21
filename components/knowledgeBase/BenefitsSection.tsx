@@ -1,6 +1,6 @@
 
 import {benefits} from '../../lib/Constants';
-const BenefitsSection = () => {
+ export const BenefitsSection = () => {
   return (
     <div className="w-full bg-[#E7F0FF] py-20 px-6 md:px-16">
       <h2 className="text-center text-4xl md:text-5xl font-bold text-gray-900 mb-14">
@@ -43,4 +43,3 @@ const BenefitsSection = () => {
   );
 };
 
-export default BenefitsSection;

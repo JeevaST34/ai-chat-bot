@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const SmartTagging = () => {
+export const SmartTagging = () => {
   return (
     <section className="w-full py-20 px-4 text-center relative">
       {/* Heading */}
@@ -27,4 +27,4 @@ const SmartTagging = () => {
   );
 };
 
-export default SmartTagging;
+

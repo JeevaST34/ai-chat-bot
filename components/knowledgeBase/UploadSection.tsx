@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const UploadSection = () => {
+export const UploadSection = () => {
   return (
     <div className="w-full flex flex-col md:flex-row items-center md:items-start justify-start gap-4 md:gap-6 lg:gap-8 px-6 md:px-16 py-6 md:py-16">
       {/* LEFT SIDE CONTENT */}
@@ -44,4 +44,3 @@ const UploadSection = () => {
   );
 };
 
-export default UploadSection;

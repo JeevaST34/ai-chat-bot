@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 
-export default function HeroSection() {
+export  function HeroSection() {
   return (
     <section className="relative w-full overflow-hidden bg-linear-to-b from-[#EEF4FF] via-[#F3F7FF] to-[#FFF5F0]">
       {/* Background blur accents */}

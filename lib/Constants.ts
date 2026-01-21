@@ -1,4 +1,4 @@
-import { BarChart3, ClipboardList, FileText, Headphones, MessageSquare, Phone, Smile, Star, Tag, Ticket, Workflow } from "lucide-react";
+import { BarChart3, Box, Briefcase, ClipboardList, Database, FileText, Globe, Headphones, MessageSquare, Phone, Smile, Star, Tag, Ticket, Trophy, Users, Workflow,MapPin } from "lucide-react";
 
 export const brands = [
   {
@@ -498,6 +498,191 @@ export  const integrations = [
       desc: "Connect 500+ integrations to power any Workflow.",
     },
   ];
+
+
+  export const faqs = [
+    {
+      question: "What is AI Chatbot and how does it work?",
+      answer:
+        "AI Chatbot is an advanced AI chatbot builder that allows you to train intelligent agents using your website content, files, and documentation. It leverages natural language processing to understand user queries and provide accurate, context-aware responses in real-time. The platform automates customer conversations, provides instant support, and integrates seamlessly into your workflow.",
+    },
+    {
+      question: "Does AI Chatbot support multiple languages?",
+      answer:
+        "Yes, AI Chatbot supports multiple languages, allowing you to engage with users globally and provide localized support experiences.",
+    },
+    {
+      question: "Do I need coding skills to use AI Chatbot?",
+      answer:
+        "No coding skills are required. AI Chatbot is designed with a user-friendly interface so anyone can set it up and manage it easily.",
+    },
+    {
+      question: "How do I embed the chatbot into my website?",
+      answer:
+        "You can embed the chatbot by copying a simple script or iframe provided in your dashboard and pasting it into your website’s HTML.",
+    },
+    {
+      question: "Is there a free trial available?",
+      answer:
+        "Yes, we offer a free trial so you can explore all features before choosing a plan.",
+    },
+    {
+      question: "What kind of support do you offer?",
+      answer:
+        "We offer email support, live chat, and comprehensive documentation to help you get started and succeed.",
+    },
+  ];
+
+    export const visitorIntegrations = [
+    {
+      icon: "/images/visitor/zapier.png",
+      title: "Zapier",
+      desc: "Connect Landbot with 4000+ apps and automate workflows.",
+    },
+    {
+      icon: "/images/visitor/webflow.png",
+      title: "Webflow",
+      desc: "Integrate your chatbot in a Webflow website.",
+    },
+    {
+      icon: "/images/visitor/wordpress.png",
+      title: "WordPress",
+      desc: "Integrate your chatbot in a WordPress website.",
+    },
+    {
+      icon: "/images/visitor/stripe.png",
+      title: "Stripe",
+      desc: "Process transactions inside your chatbot conversations.",
+    },
+    {
+      icon: "/images/visitor/slack.png",
+      title: "Slack",
+      desc: "Send Slack notifications from your chatbots.",
+    },
+    {
+      icon: "/images/visitor/shopify.png",
+      title: "Shopify",
+      desc: "Integrate your chatbot in a Shopify website.",
+    },
+    {
+      icon: "/images/visitor/calendly.png",
+      title: "Calendly",
+      desc: "Book meetings through your chatbots.",
+    },
+    {
+      icon: "/images/visitor/segment.png",
+      title: "Segment",
+      desc: "Track users & events inside your chatbots.",
+    },
+    {
+      icon: "/images/visitor/sendgrid.png",
+      title: "SendGrid",
+      desc: "Send emails directly from your chatbots.",
+    },
+    {
+      icon: "/images/visitor/dialogflow.png",
+      title: "Dialogflow",
+      desc: "Build sophisticated chatbots using NLP.",
+    },
+    {
+      icon: "/images/visitor/googlesheets.png",
+      title: "Google Sheets",
+      desc: "Add, update, and retrieve data during conversations.",
+    },
+    {
+      icon: "/images/visitor/hubspot.png",
+      title: "HubSpot",
+      desc: "Add, update, and get HubSpot data during conversations.",
+    },
+    {
+      icon: "/images/visitor/mailchimp.png",
+      title: "Mailchimp",
+      desc: "Collect and send user data to Mailchimp in real-time.",
+    },
+    {
+      icon: "/images/visitor/airtable.png",
+      title: "Airtable",
+      desc: "Add, update, and retrieve data during conversations.",
+    },
+    {
+      icon: "/images/visitor/carrd.png",
+      title: "Carrd",
+      desc: "Integrate your chatbot in a Carrd website.",
+    },
+    {
+      icon: "/images/visitor/n8n.png",
+      title: "n8n",
+      desc: "Connect 500+ integrations to power any Workflow.",
+    },
+  ];
+
+
+
+ export const VISITORSTATS = [
+  {
+    id: 1,
+    value: "17+",
+    label: "ACTIVE VISITORS TODAY",
+    bg: "bg-purple-100",
+    icon: Trophy,
+    iconColor: "text-purple-600",
+  },
+  {
+    id: 2,
+    value: "23+",
+    label: "ENGAGEMENT RATE",
+    bg: "bg-green-100",
+    icon: Users,
+    iconColor: "text-green-600",
+  },
+  {
+    id: 3,
+    value: "183+",
+    label: "AVG. CONVERSATIONS",
+    bg: "bg-orange-100",
+    icon: Smile,
+    iconColor: "text-orange-500",
+  },
+  {
+    id: 4,
+    value: "315+",
+    label: "HIGH-INTENT LEADS",
+    bg: "bg-pink-100",
+    icon: Briefcase,
+    iconColor: "text-pink-600",
+  },
+];
+
+export const INSIGHTS = [
+  {
+    id: 1,
+    title: "Support Team Alert",
+    desc: "Visitor is experiencing API integration issues with Python. They've spent significant time on documentation pages and show technical expertise.",
+    action: "Assign to Senior Support →",
+    icon: MapPin,
+  },
+  {
+    id: 2,
+    title: "Sales Opportunity",
+    desc: "High purchase intent detected. Visitor inquired about enterprise pricing after technical discussion. Estimated deal size: $25K–$50K.",
+    action: "Engage Sales Team →",
+    icon: Box,
+  },
+  {
+    id: 3,
+    title: "Knowledge Gap Identified",
+    desc: "Multiple visitors asking similar Django integration questions. Consider creating dedicated tutorial content.",
+    action: "Create Documentation →",
+    icon:Globe,
+  },
+  {
+    id: 4,
+    title: "Upsell Opportunity",
+    desc: "Visitor using basic features but showing interest in advanced capabilities. Perfect candidate for premium features demo.",
+    action: "Schedule Demo →",
+    icon:Database,
+  },
+];
 
 
 

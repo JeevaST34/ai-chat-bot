@@ -1,6 +1,6 @@
 import React from "react";
 
-function WebsiteBuilders() {
+export function WebsiteBuilders() {
   const data = [
     { title: "Webflow", img: "/images/integration/webflow.png" },
     { title: "WordPress", img: "/images/integration/wordpress.png" },
@@ -47,4 +47,3 @@ function WebsiteBuilders() {
   );
 }
 
-export default WebsiteBuilders;
