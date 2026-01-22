@@ -1,11 +1,17 @@
-
-
+"use client";
 
 import Link from "next/link";
 import { Button } from "../common";
 import Image from "next/image";
 
-export  function Footer() {
+import { useRouter } from "next/navigation";
+
+export function Footer() {
+  const router = useRouter();
+  const navigate = (path: string) => {
+    router.push(path);
+  };
+
   return (
     <footer className="bg-white">
       {/* Top Blue Strip */}
@@ -14,19 +20,51 @@ export  function Footer() {
         {/* LOGO + CTA */}
         <div className="space-y-10 ps-4">
           <a href="#" className="px-2">
-            <Image src="/images/navbar/nav-logo.svg" alt="Chat360 Logo" width={120} height={40} />
+            <Image
+              src="/images/navbar/logo.svg"
+              alt="Chat360 Logo"
+              width={60}
+              height={60}
+              className="w-32"
+            />
           </a>
 
-          <Button text="Sign Up now" radius="rounded-4xl" />
+          <Button
+            text="Sign Up now"
+            radius="rounded-4xl"
+            onClick={() => navigate("/signup")}
+          />
 
           <div className="flex items-center gap-4 text-lg px-2">
-          
-            <Image src="/images/footer/Link-instagram.png" alt="Instagram" width={24} height={24} className="cursor-pointer" />
-            
-            <Image src="/images/footer/Link-Facebook.png" alt="Facebook" width={24} height={24} className="cursor-pointer" />
-          <Image src="/images/footer/Link-Linkedin.png" alt="LinkedIn" width={24} height={24} className="cursor-pointer" />
-            <Image src="/images/footer/Link-Youtube.png" alt="Youtube" width={24} height={24} className="cursor-pointer" />
-            
+            <Image
+              src="/images/footer/Link-instagram.png"
+              alt="Instagram"
+              width={24}
+              height={24}
+              className="cursor-pointer"
+            />
+
+            <Image
+              src="/images/footer/Link-Facebook.png"
+              alt="Facebook"
+              width={24}
+              height={24}
+              className="cursor-pointer"
+            />
+            <Image
+              src="/images/footer/Link-Linkedin.png"
+              alt="LinkedIn"
+              width={24}
+              height={24}
+              className="cursor-pointer"
+            />
+            <Image
+              src="/images/footer/Link-Youtube.png"
+              alt="Youtube"
+              width={24}
+              height={24}
+              className="cursor-pointer"
+            />
           </div>
         </div>
 
@@ -36,16 +74,35 @@ export  function Footer() {
             <h4 className="text-blue-700 font-bold mb-4">Company</h4>
             <ul className="space-y-2 text-black ">
               <li className="cursor-pointer hover:underline">
-                 <Link href="/" className="cursor-pointer hover:underline">
-      Home
-      </Link>
-                </li>
+                <Link href="/" className="cursor-pointer hover:underline">
+                  {" "}
+                  Home
+                </Link>
+              </li>
               <li className="cursor-pointer hover:underline">
-                 <Link href="/contact" className="cursor-pointer hover:underline">
-   Contact Us
-      </Link>
-                
-                </li>
+                <Link
+                  href="/contact"
+                  className="cursor-pointer hover:underline"
+                >
+                  Contact Us
+                </Link>
+              </li>
+              <li className="cursor-pointer hover:underline">
+                <Link
+                  href="/privacyPolicy"
+                  className="cursor-pointer hover:underline"
+                >
+                  Privacy Policy
+                </Link>
+              </li>
+              <li className="cursor-pointer hover:underline">
+                <Link
+                  href="/termsCondition"
+                  className="cursor-pointer hover:underline"
+                >
+                  Terms and Condition
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -54,39 +111,54 @@ export  function Footer() {
             <h4 className="text-blue-700 font-bold mb-4">Product</h4>
             <ul className="space-y-2 text-black">
               <li className="cursor-pointer hover:underline">
-                 <Link href="/features" className="cursor-pointer hover:underline">
-        Features
-      </Link>
-                
-                </li>
+                <Link
+                  href="/features"
+                  className="cursor-pointer hover:underline"
+                >
+                  Features
+                </Link>
+              </li>
               <li className="cursor-pointer hover:underline">
-                <Link href="/integration" className="cursor-pointer hover:underline">
-        Integrations
-      </Link>
-                </li>
+                <Link
+                  href="/integration"
+                  className="cursor-pointer hover:underline"
+                >
+                  Integrations
+                </Link>
+              </li>
             </ul>
           </div>
 
           {/* Resources */}
           <div className="mb-3">
             <h4 className="text-blue-700 font-bold mb-4">
-              
-                <Link href="/Resources" className="cursor-pointer hover:underline">
-        Resources
-      </Link>
-              </h4>
+              <Link
+                href="/Resources"
+                className="cursor-pointer hover:underline"
+              >
+                Resources
+              </Link>
+            </h4>
             <ul className="space-y-2 text-black">
               <li className="cursor-pointer hover:underline">
-                 <Link href="/knowledgeBase" className="cursor-pointer hover:underline">
-        Knowledge Base
-      </Link>
-                </li>
+                <Link
+                  href="/knowledgeBase"
+                  className="cursor-pointer hover:underline"
+                >
+                  Knowledge Base
+                </Link>
+              </li>
               <li className="cursor-pointer hover:underline">
+                <Link
+                  href="/visitor-insights"
+                  className="cursor-pointer hover:underline"
+                >
+                  Visitor Insights
+                </Link>
+              </li>
 
-                <Link href="/visitor-insights" className="cursor-pointer hover:underline">
-           Visitor Insights
-      </Link>
-            
+              <li className="cursor-pointer hover:underline">
+                <Link href="/context">Context</Link>
               </li>
             </ul>
           </div>
@@ -96,18 +168,21 @@ export  function Footer() {
             <h4 className="text-blue-700 font-bold mb-4">Platform</h4>
             <ul className="space-y-2 text-black">
               <li className="cursor-pointer hover:underline">
-
-                <Link href="/analytics" className="cursor-pointer hover:underline">
-        Analytics & Dashboard
-      </Link>
-        
+                <Link
+                  href="/analytics"
+                  className="cursor-pointer hover:underline"
+                >
+                  Analytics & Dashboard
+                </Link>
               </li>
               <li className="cursor-pointer hover:underline">
-                 <Link href="/pricing" className="cursor-pointer hover:underline">
-        Pricing
-      </Link>
-                
-                </li>
+                <Link
+                  href="/pricing"
+                  className="cursor-pointer hover:underline"
+                >
+                  Pricing
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -116,17 +191,15 @@ export  function Footer() {
             <h4 className="text-blue-700 font-bold mb-4">Support</h4>
             <ul className="space-y-2 text-black">
               <li className="cursor-pointer hover:underline">
-                  <Link href="/faq" className="cursor-pointer hover:underline">
-        FAQ
-      </Link>
-                
-                </li>
+                <Link href="/faq" className="cursor-pointer hover:underline">
+                  FAQ
+                </Link>
+              </li>
               <li className="cursor-pointer hover:underline">
-                
                 <Link href="/signup" className="cursor-pointer hover:underline">
-         Sign Up
-      </Link>
-               </li>
+                  Sign Up
+                </Link>
+              </li>
             </ul>
           </div>
         </div>

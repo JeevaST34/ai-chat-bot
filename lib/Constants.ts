@@ -1,4 +1,23 @@
-import { BarChart3, Box, Briefcase, ClipboardList, Database, FileText, Globe, Headphones, MessageSquare, Phone, Smile, Star, Tag, Ticket, Trophy, Users, Workflow,MapPin } from "lucide-react";
+import {
+  BarChart3,
+  Box,
+  Briefcase,
+  ClipboardList,
+  Database,
+  FileText,
+  Globe,
+  Headphones,
+  MessageSquare,
+  Phone,
+  Smile,
+  Star,
+  Tag,
+  Ticket,
+  Trophy,
+  Users,
+  Workflow,
+  MapPin,
+} from "lucide-react";
 
 export const brands = [
   {
@@ -53,62 +72,61 @@ export const brands = [
   },
 ];
 
+export const plans = [
+  {
+    name: "Free",
+    price: { monthly: 0, yearly: 0 },
+    highlights: [],
+    features: [
+      "AI Chatbot + Autoreply",
+      "Basic Workflow Automation",
+      "1 seat",
+      "200 conversations/month",
+    ],
+    button: "Sign up free",
+    highlighted: false,
+  },
+  {
+    name: "Starter",
+    price: { monthly: 39, yearly: 29 },
+    features: [
+      "Everything in Free",
+      "Live Chat + Helpdesk",
+      "5 seats",
+      "5,000 conversations/month",
+    ],
+    button: "Get Started",
+    highlighted: false,
+  },
+  {
+    name: "Team",
+    price: { monthly: 89, yearly: 69 },
+    features: [
+      "Everything in Starter",
+      "Smart Ticketing + Mailbox",
+      "Teams & Roles",
+      "15 seats",
+      "15,000 conversations/month",
+    ],
+    tag: "Most Popular",
+    highlighted: true,
+  },
+  {
+    name: "Business",
+    price: { monthly: 249, yearly: 199 },
+    features: [
+      "Everything in Team",
+      "Bot for multiple brands",
+      "White-label options",
+      "Unlimited seats",
+      "60,000 conversations/month",
+    ],
+    button: "Start Now",
+    highlighted: false,
+  },
+];
 
- export  const plans = [
-    {
-      name: "Free",
-      price: { monthly: 0, yearly: 0 },
-      highlights: [],
-      features: [
-        "AI Chatbot + Autoreply",
-        "Basic Workflow Automation",
-        "1 seat",
-        "200 conversations/month",
-      ],
-      button: "Sign up free",
-      highlighted: false,
-    },
-    {
-      name: "Starter",
-      price: { monthly: 39, yearly: 29 },
-      features: [
-        "Everything in Free",
-        "Live Chat + Helpdesk",
-        "5 seats",
-        "5,000 conversations/month",
-      ],
-      button: "Get Started",
-      highlighted: false,
-    },
-    {
-      name: "Team",
-      price: { monthly: 89, yearly: 69 },
-      features: [
-        "Everything in Starter",
-        "Smart Ticketing + Mailbox",
-        "Teams & Roles",
-        "15 seats",
-        "15,000 conversations/month",
-      ],
-      tag: "Most Popular",
-      highlighted: true,
-    },
-    {
-      name: "Business",
-      price: { monthly: 249, yearly: 199 },
-      features: [
-        "Everything in Team",
-        "Bot for multiple brands",
-        "White-label options",
-        "Unlimited seats",
-        "60,000 conversations/month",
-      ],
-      button: "Start Now",
-      highlighted: false,
-    },
-  ];
-
-  export const otherFeatures = [
+export const otherFeatures = [
   {
     title: "Emotion & Intent Detection",
     icon: Smile,
@@ -168,7 +186,6 @@ export const brands = [
   },
 ];
 
-
 export const features = [
   {
     title: "Resolve issues faster",
@@ -184,11 +201,8 @@ export const features = [
       "Capture more leads and generate more revenue with AI Chatbots that engage visitors 24/7 and qualify buying intent.",
     image: "/images/articles/article-2.png",
     btnText: "Start Free Trial",
-    
   },
 ];
-
-
 
 export const TestimonialItems = [
   {
@@ -275,7 +289,6 @@ export const stats = [
   },
 ];
 
-
 export const benefits = [
   {
     icon: "🧠",
@@ -323,7 +336,6 @@ export const versions = [
     time: "1 day ago",
   },
 ];
-
 
 export const primaryFeatures = [
   {
@@ -416,209 +428,206 @@ export const VendorComparisonFeatures = [
   },
 ];
 
-export  const integrations = [
-    {
-      icon: "/images/integration/zapier.png",
-      title: "Zapier",
-      desc: "Connect Landbot with 4000+ apps and automate workflows.",
-    },
-    {
-      icon: "/images/integration/webflow.png",
-      title: "Webflow",
-      desc: "Integrate your chatbot in a Webflow website.",
-    },
-    {
-      icon: "/images/integration/wordpress.png",
-      title: "WordPress",
-      desc: "Integrate your chatbot in a WordPress website.",
-    },
-    {
-      icon: "/images/integration/stripe.png",
-      title: "Stripe",
-      desc: "Process transactions inside your chatbot conversations.",
-    },
-    {
-      icon: "/images/integration/slack.png",
-      title: "Slack",
-      desc: "Send Slack notifications from your chatbots.",
-    },
-    {
-      icon: "/images/integration/shopify.png",
-      title: "Shopify",
-      desc: "Integrate your chatbot in a Shopify website.",
-    },
-    {
-      icon: "/images/integration/calendly.png",
-      title: "Calendly",
-      desc: "Book meetings through your chatbots.",
-    },
-    {
-      icon: "/images/integration/segment.png",
-      title: "Segment",
-      desc: "Track users & events inside your chatbots.",
-    },
-    {
-      icon: "/images/integration/sendgrid.png",
-      title: "SendGrid",
-      desc: "Send emails directly from your chatbots.",
-    },
-    {
-      icon: "/images/integration/dialogflow.png",
-      title: "Dialogflow",
-      desc: "Build sophisticated chatbots using NLP.",
-    },
-    {
-      icon: "/images/integration/googlesheets.png",
-      title: "Google Sheets",
-      desc: "Add, update, and retrieve data during conversations.",
-    },
-    {
-      icon: "/images/integration/hubspot.png",
-      title: "HubSpot",
-      desc: "Add, update, and get HubSpot data during conversations.",
-    },
-    {
-      icon: "/images/integration/mailchimp.png",
-      title: "Mailchimp",
-      desc: "Collect and send user data to Mailchimp in real-time.",
-    },
-    {
-      icon: "/images/integration/airtable.png",
-      title: "Airtable",
-      desc: "Add, update, and retrieve data during conversations.",
-    },
-    {
-      icon: "/images/integration/carrd.png",
-      title: "Carrd",
-      desc: "Integrate your chatbot in a Carrd website.",
-    },
-    {
-      icon: "/images/integration/n8n.png",
-      title: "n8n",
-      desc: "Connect 500+ integrations to power any Workflow.",
-    },
-  ];
+export const integrations = [
+  {
+    icon: "/images/integration/zapier.png",
+    title: "Zapier",
+    desc: "Connect Landbot with 4000+ apps and automate workflows.",
+  },
+  {
+    icon: "/images/integration/webflow.png",
+    title: "Webflow",
+    desc: "Integrate your chatbot in a Webflow website.",
+  },
+  {
+    icon: "/images/integration/wordpress.png",
+    title: "WordPress",
+    desc: "Integrate your chatbot in a WordPress website.",
+  },
+  {
+    icon: "/images/integration/stripe.png",
+    title: "Stripe",
+    desc: "Process transactions inside your chatbot conversations.",
+  },
+  {
+    icon: "/images/integration/slack.png",
+    title: "Slack",
+    desc: "Send Slack notifications from your chatbots.",
+  },
+  {
+    icon: "/images/integration/shopify.png",
+    title: "Shopify",
+    desc: "Integrate your chatbot in a Shopify website.",
+  },
+  {
+    icon: "/images/integration/calendly.png",
+    title: "Calendly",
+    desc: "Book meetings through your chatbots.",
+  },
+  {
+    icon: "/images/integration/segment.png",
+    title: "Segment",
+    desc: "Track users & events inside your chatbots.",
+  },
+  {
+    icon: "/images/integration/sendgrid.png",
+    title: "SendGrid",
+    desc: "Send emails directly from your chatbots.",
+  },
+  {
+    icon: "/images/integration/dialogflow.png",
+    title: "Dialogflow",
+    desc: "Build sophisticated chatbots using NLP.",
+  },
+  {
+    icon: "/images/integration/googlesheets.png",
+    title: "Google Sheets",
+    desc: "Add, update, and retrieve data during conversations.",
+  },
+  {
+    icon: "/images/integration/hubspot.png",
+    title: "HubSpot",
+    desc: "Add, update, and get HubSpot data during conversations.",
+  },
+  {
+    icon: "/images/integration/mailchimp.png",
+    title: "Mailchimp",
+    desc: "Collect and send user data to Mailchimp in real-time.",
+  },
+  {
+    icon: "/images/integration/airtable.png",
+    title: "Airtable",
+    desc: "Add, update, and retrieve data during conversations.",
+  },
+  {
+    icon: "/images/integration/carrd.png",
+    title: "Carrd",
+    desc: "Integrate your chatbot in a Carrd website.",
+  },
+  {
+    icon: "/images/integration/n8n.png",
+    title: "n8n",
+    desc: "Connect 500+ integrations to power any Workflow.",
+  },
+];
 
+export const faqs = [
+  {
+    question: "What is AI Chatbot and how does it work?",
+    answer:
+      "AI Chatbot is an advanced AI chatbot builder that allows you to train intelligent agents using your website content, files, and documentation. It leverages natural language processing to understand user queries and provide accurate, context-aware responses in real-time. The platform automates customer conversations, provides instant support, and integrates seamlessly into your workflow.",
+  },
+  {
+    question: "Does AI Chatbot support multiple languages?",
+    answer:
+      "Yes, AI Chatbot supports multiple languages, allowing you to engage with users globally and provide localized support experiences.",
+  },
+  {
+    question: "Do I need coding skills to use AI Chatbot?",
+    answer:
+      "No coding skills are required. AI Chatbot is designed with a user-friendly interface so anyone can set it up and manage it easily.",
+  },
+  {
+    question: "How do I embed the chatbot into my website?",
+    answer:
+      "You can embed the chatbot by copying a simple script or iframe provided in your dashboard and pasting it into your website’s HTML.",
+  },
+  {
+    question: "Is there a free trial available?",
+    answer:
+      "Yes, we offer a free trial so you can explore all features before choosing a plan.",
+  },
+  {
+    question: "What kind of support do you offer?",
+    answer:
+      "We offer email support, live chat, and comprehensive documentation to help you get started and succeed.",
+  },
+];
 
-  export const faqs = [
-    {
-      question: "What is AI Chatbot and how does it work?",
-      answer:
-        "AI Chatbot is an advanced AI chatbot builder that allows you to train intelligent agents using your website content, files, and documentation. It leverages natural language processing to understand user queries and provide accurate, context-aware responses in real-time. The platform automates customer conversations, provides instant support, and integrates seamlessly into your workflow.",
-    },
-    {
-      question: "Does AI Chatbot support multiple languages?",
-      answer:
-        "Yes, AI Chatbot supports multiple languages, allowing you to engage with users globally and provide localized support experiences.",
-    },
-    {
-      question: "Do I need coding skills to use AI Chatbot?",
-      answer:
-        "No coding skills are required. AI Chatbot is designed with a user-friendly interface so anyone can set it up and manage it easily.",
-    },
-    {
-      question: "How do I embed the chatbot into my website?",
-      answer:
-        "You can embed the chatbot by copying a simple script or iframe provided in your dashboard and pasting it into your website’s HTML.",
-    },
-    {
-      question: "Is there a free trial available?",
-      answer:
-        "Yes, we offer a free trial so you can explore all features before choosing a plan.",
-    },
-    {
-      question: "What kind of support do you offer?",
-      answer:
-        "We offer email support, live chat, and comprehensive documentation to help you get started and succeed.",
-    },
-  ];
+export const visitorIntegrations = [
+  {
+    icon: "/images/visitor/zapier.png",
+    title: "Zapier",
+    desc: "Connect Landbot with 4000+ apps and automate workflows.",
+  },
+  {
+    icon: "/images/visitor/webflow.png",
+    title: "Webflow",
+    desc: "Integrate your chatbot in a Webflow website.",
+  },
+  {
+    icon: "/images/visitor/wordpress.png",
+    title: "WordPress",
+    desc: "Integrate your chatbot in a WordPress website.",
+  },
+  {
+    icon: "/images/visitor/stripe.png",
+    title: "Stripe",
+    desc: "Process transactions inside your chatbot conversations.",
+  },
+  {
+    icon: "/images/visitor/slack.png",
+    title: "Slack",
+    desc: "Send Slack notifications from your chatbots.",
+  },
+  {
+    icon: "/images/visitor/shopify.png",
+    title: "Shopify",
+    desc: "Integrate your chatbot in a Shopify website.",
+  },
+  {
+    icon: "/images/visitor/calendly.png",
+    title: "Calendly",
+    desc: "Book meetings through your chatbots.",
+  },
+  {
+    icon: "/images/visitor/segment.png",
+    title: "Segment",
+    desc: "Track users & events inside your chatbots.",
+  },
+  {
+    icon: "/images/visitor/sendgrid.png",
+    title: "SendGrid",
+    desc: "Send emails directly from your chatbots.",
+  },
+  {
+    icon: "/images/visitor/dialogflow.png",
+    title: "Dialogflow",
+    desc: "Build sophisticated chatbots using NLP.",
+  },
+  {
+    icon: "/images/visitor/googlesheets.png",
+    title: "Google Sheets",
+    desc: "Add, update, and retrieve data during conversations.",
+  },
+  {
+    icon: "/images/visitor/hubspot.png",
+    title: "HubSpot",
+    desc: "Add, update, and get HubSpot data during conversations.",
+  },
+  {
+    icon: "/images/visitor/mailchimp.png",
+    title: "Mailchimp",
+    desc: "Collect and send user data to Mailchimp in real-time.",
+  },
+  {
+    icon: "/images/visitor/airtable.png",
+    title: "Airtable",
+    desc: "Add, update, and retrieve data during conversations.",
+  },
+  {
+    icon: "/images/visitor/carrd.png",
+    title: "Carrd",
+    desc: "Integrate your chatbot in a Carrd website.",
+  },
+  {
+    icon: "/images/visitor/n8n.png",
+    title: "n8n",
+    desc: "Connect 500+ integrations to power any Workflow.",
+  },
+];
 
-    export const visitorIntegrations = [
-    {
-      icon: "/images/visitor/zapier.png",
-      title: "Zapier",
-      desc: "Connect Landbot with 4000+ apps and automate workflows.",
-    },
-    {
-      icon: "/images/visitor/webflow.png",
-      title: "Webflow",
-      desc: "Integrate your chatbot in a Webflow website.",
-    },
-    {
-      icon: "/images/visitor/wordpress.png",
-      title: "WordPress",
-      desc: "Integrate your chatbot in a WordPress website.",
-    },
-    {
-      icon: "/images/visitor/stripe.png",
-      title: "Stripe",
-      desc: "Process transactions inside your chatbot conversations.",
-    },
-    {
-      icon: "/images/visitor/slack.png",
-      title: "Slack",
-      desc: "Send Slack notifications from your chatbots.",
-    },
-    {
-      icon: "/images/visitor/shopify.png",
-      title: "Shopify",
-      desc: "Integrate your chatbot in a Shopify website.",
-    },
-    {
-      icon: "/images/visitor/calendly.png",
-      title: "Calendly",
-      desc: "Book meetings through your chatbots.",
-    },
-    {
-      icon: "/images/visitor/segment.png",
-      title: "Segment",
-      desc: "Track users & events inside your chatbots.",
-    },
-    {
-      icon: "/images/visitor/sendgrid.png",
-      title: "SendGrid",
-      desc: "Send emails directly from your chatbots.",
-    },
-    {
-      icon: "/images/visitor/dialogflow.png",
-      title: "Dialogflow",
-      desc: "Build sophisticated chatbots using NLP.",
-    },
-    {
-      icon: "/images/visitor/googlesheets.png",
-      title: "Google Sheets",
-      desc: "Add, update, and retrieve data during conversations.",
-    },
-    {
-      icon: "/images/visitor/hubspot.png",
-      title: "HubSpot",
-      desc: "Add, update, and get HubSpot data during conversations.",
-    },
-    {
-      icon: "/images/visitor/mailchimp.png",
-      title: "Mailchimp",
-      desc: "Collect and send user data to Mailchimp in real-time.",
-    },
-    {
-      icon: "/images/visitor/airtable.png",
-      title: "Airtable",
-      desc: "Add, update, and retrieve data during conversations.",
-    },
-    {
-      icon: "/images/visitor/carrd.png",
-      title: "Carrd",
-      desc: "Integrate your chatbot in a Carrd website.",
-    },
-    {
-      icon: "/images/visitor/n8n.png",
-      title: "n8n",
-      desc: "Connect 500+ integrations to power any Workflow.",
-    },
-  ];
-
-
-
- export const VISITORSTATS = [
+export const VISITORSTATS = [
   {
     id: 1,
     value: "17+",
@@ -673,17 +682,192 @@ export const INSIGHTS = [
     title: "Knowledge Gap Identified",
     desc: "Multiple visitors asking similar Django integration questions. Consider creating dedicated tutorial content.",
     action: "Create Documentation →",
-    icon:Globe,
+    icon: Globe,
   },
   {
     id: 4,
     title: "Upsell Opportunity",
     desc: "Visitor using basic features but showing interest in advanced capabilities. Perfect candidate for premium features demo.",
     action: "Schedule Demo →",
-    icon:Database,
+    icon: Database,
   },
 ];
 
+export const ContextFeatures = [
+  {
+    title: "Why Context Engineering Matters",
+    description:
+      "Language models reason entirely within the context you provide. Advanced context design ensures clarity, reduces AI hallucinations, and creates consistent, reliable conversational experiences[citation:2].",
+    points: [
+      "Reduces hallucinations by 70%+ with proper grounding",
+      "Reduces hallucinations by 70%+ with proper grounding",
+      "Aligns AI responses with specific business goals",
+      "Enables personalized, adaptive interactions",
+    ],
+    image: "/images/context/z-pattern-1.png",
+  },
+  {
+    title: "Structured Prompt Layers",
+    description:
+      "Modern context engineering orchestrates system rules, memory, user intent, and real-time data into cohesive conversational layers[citation:4].",
+    points: [
+      "System behavior & guardrail definitions",
+      "Dynamic user intent & session state tracking",
+      "Real-time business knowledge retrieval",
+      "Conversation memory and history management",
+    ],
+    image: "/images/context/z-pattern-2.png",
+  },
+  {
+    title: "Intelligent Memory Systems",
+    description:
+      "Sophisticated memory architectures distinguish short-term conversation context from long-term user knowledge, creating seamless, personalized experiences[citation:8].",
+    points: [
+      "Short-term vs long-term memory separation",
+      "Token-efficient context compression",
+      "Vector-based semantic retrieval",
+      "Personalized conversation recall",
+    ],
+    image: "/images/context/z-pattern-3.png",
+  },
+];
 
+export const policyData = {
+  title: "Privacy Policy",
+  subtitle:
+    "We respect your privacy and are committed to protecting your data and maintaining transparency in how information is collected and used.",
+  lastUpdated: "[Date]",
+  intro:
+    "We value your privacy and are committed to protecting your data while using our AI Chatbot platform.",
+  sections: [
+    {
+      title: "Information We Collect",
+      items: [
+        "Account and tenant details (company, users, subscription)",
+        "Chat conversations and usage data",
+        "Uploaded documents and related metadata",
+        "Visitor interaction data (non-personal where possible)",
+      ],
+    },
+    {
+      title: "How We Use Data",
+      items: [
+        "Operate and improve the AI Chatbot service",
+        "Generate accurate, document-based responses",
+        "Monitor usage, performance, and costs",
+        "Manage subscriptions, billing, and invoices",
+      ],
+    },
+    {
+      title: "Data Ownership & Security",
+      items: [
+        "All data belongs to the respective tenant",
+        "We do not use your data to train public AI models",
+        "Industry-standard security measures are used to protect your information",
+      ],
+    },
+    {
+      title: "Data Sharing",
+      content:
+        "We do not sell your data. Information is shared only with trusted service providers or when legally required.",
+    },
+    {
+      title: "Data Retention",
+      content:
+        "Data is retained while your account is active and may be deleted after account termination, subject to legal requirements.",
+    },
+    {
+      title: "Your Rights",
+      content:
+        "You may request access, correction, or deletion of your data by contacting support.",
+    },
+    {
+      title: "Changes",
+      content:
+        "We may update this policy periodically. Continued use of the platform indicates acceptance of the updated policy.",
+    },
+  ],
+};
 
-
+export const termsConditionsData = {
+  title: "Terms & Conditions",
+  subtitle:
+    "Please read these Terms & Conditions carefully before using our AI Chatbot platform.",
+  lastUpdated: "[Date]",
+  intro:
+    'By accessing or using our AI Chatbot platform ("Service"), you agree to these Terms & Conditions. If you do not agree, please do not use the Service.',
+  sections: [
+    {
+      title: "Service Overview",
+      content:
+        "Our platform allows businesses to create, manage, and deploy AI-powered chatbots using their own documents, users, and configurations.",
+    },
+    {
+      title: "Account & Tenant Responsibility",
+      items: [
+        "Each tenant represents a company or organization.",
+        "You are responsible for maintaining the confidentiality of your account credentials.",
+        "Tenants are responsible for all activities performed by their users.",
+      ],
+    },
+    {
+      title: "Data & Content Ownership",
+      items: [
+        "All documents, chat conversations, and uploaded data remain the property of the tenant.",
+        "You grant us permission to process your data solely to provide the Service.",
+        "We do not use tenant data to train public AI models.",
+      ],
+    },
+    {
+      title: "Acceptable Use",
+      items: [
+        "Use the platform for unlawful or harmful activities.",
+        "Upload malicious, misleading, or unauthorized content.",
+        "Attempt to disrupt, reverse engineer, or misuse the Service.",
+      ],
+    },
+    {
+      title: "AI Responses Disclaimer",
+      content:
+        'AI-generated responses are provided on an "as-is" basis. We do not guarantee accuracy, completeness, or suitability for any specific purpose.',
+    },
+    {
+      title: "Subscription & Billing",
+      items: [
+        "Subscription plans include Free, Silver, Gold, and Platinum.",
+        "Fees, usage limits, and billing cycles are defined per plan.",
+        "Invoices and billing details are available in the Settings section.",
+      ],
+    },
+    {
+      title: "Your Rights",
+      content:
+        "You may request access, correction, or deletion of your data by contacting support.",
+    },
+    {
+      title: "Service Availability",
+      content:
+        "We strive to maintain high availability but do not guarantee uninterrupted access. Maintenance or technical issues may cause temporary downtime.",
+    },
+    {
+      title: "Limitation of Liability",
+      content:
+        "To the maximum extent permitted by law, we are not liable for indirect, incidental, or consequential damages arising from use of the Service.",
+    },
+    {
+      title: "Termination",
+      content:
+        "We may suspend or terminate access if these Terms are violated or if required by law. Upon termination, data handling will follow our Privacy Policy.",
+    },
+    {
+      title: "Changes to Terms",
+      content:
+        "We may update these Terms periodically. Continued use of the Service indicates acceptance of the revised Terms.",
+    },
+    {
+      title: "Governing Law",
+      content:
+        "These Terms are governed by the laws applicable in your operating jurisdiction.",
+    },
+  ],
+};

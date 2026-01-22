@@ -1,8 +1,14 @@
-
-import { Hero , BrandMarquee, HomeFeature,Journey,PrivacySecurity,Testimonial
-,FeaturesSection,ToolsMarquee,VendorComparison  
+import {
+  Hero,
+  BrandMarquee,
+  HomeFeature,
+  Journey,
+  PrivacySecurity,
+  Testimonial,
+  FeaturesSection,
+  ToolsMarquee,
+  VendorComparison,
 } from "@/components/home";
-
 
 export default function Home() {
   return (
@@ -10,11 +16,11 @@ export default function Home() {
       <Hero />
       <BrandMarquee />
       <HomeFeature />
+      <ToolsMarquee />
       <PrivacySecurity />
       <Journey />
       <Testimonial />
       <FeaturesSection />
-      <ToolsMarquee />
       <VendorComparison />
     </div>
   );

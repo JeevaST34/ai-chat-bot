@@ -25,7 +25,7 @@ export default function HomeFeatureCard({
       <Image src={image} alt={title} width={520} height={360} />
 
       <div className="max-w-xl">
-        <h3 className="text-2xl font-semibold mb-4">{title}</h3>
+        <h3 className="text-2xl font-semibold mb-4 text-black">{title}</h3>
         <p className="text-gray-600 mb-6">{description}</p>
         <Button>{btnText}</Button>
       </div>

@@ -12,7 +12,7 @@ export function Navbar() {
   const navItems = [
     { label: "Home", href: "/" },
     { label: "Features", href: "/features" },
-    { label: "Pricing", href: "/pricing" }, // ✅ FIXED
+    { label: "Pricing", href: "/pricing" },
     { label: "Integration", href: "/integration" },
     { label: "Knowledge Base", href: "/knowledgeBase" },
     { label: "Contact us", href: "/contact" },
@@ -27,32 +27,33 @@ export function Navbar() {
 
   return (
     <header className="w-full">
-      {/* Announcement Bar */}
-      <div className="bg-[#1E6BFF] h-19">
-        <div className="max-w-300 mx-auto h-full px-4 flex items-center justify-center gap-3">
+      {/* 🔹 Announcement Bar */}
+      <div className="bg-[#1E6BFF] py-2">
+        <div className="max-w-7xl mx-auto px-4 flex items-center justify-center gap-3 flex-wrap">
           <p className="text-white text-[13px] font-medium text-center">
             AI Chatbot: Human-Like Agent Voices for Real Conversations, Sales &
             Support
           </p>
           <Link
-            href="/pricing"
-            className="bg-white text-[#1E6BFF] text-[12px] font-semibold px-3 py-0.75 rounded-full hover:bg-blue-50 transition"
+            href="/checknow"
+            className="bg-white text-[#1E6BFF] text-[12px] font-semibold px-3 py-1 rounded-full hover:bg-blue-50 transition"
           >
             Check now
           </Link>
         </div>
       </div>
 
-      {/* Navbar */}
+      {/* 🔹 Navbar */}
       <div className="bg-white border-b border-gray-200">
-        <div className="max-w-300 mx-auto h-16 px-4 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto h-16 px-6 flex items-center justify-between">
           {/* Logo */}
-          <Link href="/">
+          <Link href="/" className="flex items-center h-full">
             <Image
-              src="/images/navbar/nav-logo.svg"
-              alt="Logo"
-              width={120}
-              height={40}
+              src="/images/navbar/logo.svg"
+              alt="Chatbot AI Logo"
+              width={60}
+              height={60}
+              className="object-contain w-32"
               priority
             />
           </Link>
@@ -79,7 +80,7 @@ export function Navbar() {
               Login
             </Link>
             <Link
-              href="/contact"
+              href="/demo"
               className="bg-[#1E6BFF] text-white text-[14px] font-semibold px-5 py-2 rounded-full hover:bg-blue-700 transition"
             >
               Book a demo
@@ -127,7 +128,7 @@ export function Navbar() {
         {/* Mobile Menu */}
         {menuOpen && (
           <div className="md:hidden border-t border-gray-200 bg-white">
-            <div className="px-4 py-4 flex flex-col gap-4">
+            <div className="px-6 py-4 flex flex-col gap-4">
               {navItems.map((item) => (
                 <Link
                   key={item.label}
@@ -148,7 +149,7 @@ export function Navbar() {
                   Login
                 </Link>
                 <Link
-                  href="/contact"
+                  href="/demo"
                   onClick={() => setMenuOpen(false)}
                   className="bg-[#1E6BFF] text-white text-center text-[14px] font-semibold py-2.5 rounded-full"
                 >

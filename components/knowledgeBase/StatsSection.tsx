@@ -1,8 +1,8 @@
-import {stats} from "../../lib/Constants";
+import { stats } from "../../lib/Constants";
 
 export const StatsSection = () => {
   return (
-    <div className="w-full grid grid-cols-1 md:grid-cols-4 gap-6 px-6 md:px-16 py-6 md:py-16">
+    <div className="w-full grid grid-cols-1 md:grid-cols-4 gap-6 px-6 md:px-16 py-6 md:py-16 bg-white">
       {stats.map((item, index) => (
         <div
           key={index}

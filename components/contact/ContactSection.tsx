@@ -1,11 +1,9 @@
 "use client";
 
-import { Mail, Phone, MapPin, ArrowRight } from "lucide-react";
-
 export default function ContactForm() {
   return (
     <section className="w-full bg-[#f5f7fb] py-20">
-      <div className="max-w-[1200px] mx-auto px-4">
+      <div className="max-w-300 mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-14">
           <h1 className="text-[36px] font-semibold text-[#0f172a]">
@@ -123,7 +121,7 @@ export default function ContactForm() {
         <input
           type="text"
           placeholder="Full name"
-          className="w-full h-[48px] border border-[#e5e7eb] rounded-md px-4 text-[14px] focus:outline-none focus:border-[#2563eb]"
+          className="w-full h-12 border border-[#e5e7eb] rounded-md px-4 text-[14px] focus:outline-none focus:border-[#2563eb]"
         />
       </div>
 
@@ -134,7 +132,7 @@ export default function ContactForm() {
         <input
           type="email"
           placeholder="Email address"
-          className="w-full h-[48px] border border-[#e5e7eb] rounded-md px-4 text-[14px] focus:outline-none focus:border-[#2563eb]"
+          className="w-full h-12 border border-[#e5e7eb] rounded-md px-4 text-[14px] focus:outline-none focus:border-[#2563eb]"
         />
       </div>
     </div>
@@ -147,7 +145,7 @@ export default function ContactForm() {
       <input
         type="text"
         placeholder="Brand/Company/Product Name"
-        className="w-full h-[48px] border border-[#e5e7eb] rounded-md px-4 text-[14px] focus:outline-none focus:border-[#2563eb]"
+        className="w-full h-12 border border-[#e5e7eb] rounded-md px-4 text-[14px] focus:outline-none focus:border-[#2563eb]"
       />
     </div>
 

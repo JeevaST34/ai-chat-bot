@@ -29,12 +29,12 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-           {/* Global Navbar */}
+        {/* Global Navbar */}
         <Navbar />
-      <main> {children}</main> 
-          {/* Global CTA (before footer) */}
+        <main> {children}</main>
+        {/* Global CTA (before footer) */}
         <CTASection />
-  {/* Global  footer*/}
+        {/* Global  footer*/}
         <Footer />
       </body>
     </html>

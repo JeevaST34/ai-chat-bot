@@ -1,18 +1,18 @@
-import {versions} from '../../lib/Constants';
+import { versions } from "../../lib/Constants";
 
 export const VersionControlSection = () => {
   return (
     <section className="w-full py-20 px-6 md:px-16 relative">
       {/* Background (You will add your pattern image here) */}
       <div
-        className="absolute inset-0 -z-10 bg-cover"
+        className="absolute inset-0 -z-10 bg-cover bg-white"
         style={{
           backgroundImage: "url('/images/knowledgeBase/knowledge-bg.png')",
         }}
       ></div>
 
       {/* Title + Subtitle */}
-      <div className="text-white mb-12">
+      <div className="text-white mb-12 text-center">
         <h2 className="text-4xl md:text-5xl font-bold">Version Control</h2>
         <p className="text-lg mt-2 opacity-90">
           Complete document history and tracking
@@ -50,4 +50,3 @@ export const VersionControlSection = () => {
     </section>
   );
 };
-

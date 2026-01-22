@@ -4,7 +4,7 @@ import Image from "next/image";
 export function PrivacySecurity() {
   return (
     <>
-      <section className="bg-gray-100 py-15">
+      <section className=" py-15 bg-white">
         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
           {/* LEFT CONTENT */}
           <div>
@@ -25,13 +25,15 @@ export function PrivacySecurity() {
           {/* RIGHT CERT GRID */}
 
           <div className="p-6 rounded-2xl ">
-            
-            <Image src='/images/articles/privacy-security.png' alt="Privacy and Security" width={500} height={300} />
+            <Image
+              src="/images/articles/privacy-security.png"
+              alt="Privacy and Security"
+              width={500}
+              height={300}
+            />
           </div>
         </div>
       </section>
     </>
   );
 }
-
-

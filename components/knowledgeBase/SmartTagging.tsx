@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export const SmartTagging = () => {
   return (
-    <section className="w-full py-20 px-4 text-center relative">
+    <section className="w-full py-20 px-4 text-center relative bg-white">
       {/* Heading */}
       <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
         Smart Tagging
@@ -26,5 +26,3 @@ export const SmartTagging = () => {
     </section>
   );
 };
-
-

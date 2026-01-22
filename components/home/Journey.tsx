@@ -1,10 +1,9 @@
 import { journeyStats } from "@/lib/Constants";
 import React from "react";
 
-
- export function  Journey() {
+export function Journey() {
   return (
-    <section className="w-full py-24">
+    <section className="w-full py-24 bg-white">
       {/* Heading */}
       <div className="text-center max-w-4xl mx-auto mb-16">
         <h2 className="text-[40px] font-semibold text-gray-900 leading-tight">
@@ -49,4 +48,3 @@ import React from "react";
     </section>
   );
 }
-

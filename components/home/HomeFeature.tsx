@@ -1,15 +1,10 @@
-
-
-
 import { features } from "../../lib/Constants";
 import HomeFeatureCard from "./HomeFeatureCard";
 
-
-
 export function HomeFeature() {
   return (
-    <section className="py-28 px-2">
-      <h2 className="md:text-4xl text-2xl font-bold text-center mb-2">
+    <section className="py-28 px-2 bg-white">
+      <h2 className="md:text-4xl text-2xl font-bold text-center mb-2 text-black">
         AI Chatbots that understand your customers
       </h2>
 
@@ -26,5 +21,3 @@ export function HomeFeature() {
     </section>
   );
 }
-
-

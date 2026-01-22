@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export const UploadSection = () => {
   return (
-    <div className="w-full flex flex-col md:flex-row items-center md:items-start justify-start gap-4 md:gap-6 lg:gap-8 px-6 md:px-16 py-6 md:py-16">
+    <div className=" bg-white w-full flex flex-col md:flex-row items-center md:items-start justify-start gap-4 md:gap-6 lg:gap-8 px-6 md:px-16 py-6 md:py-16">
       {/* LEFT SIDE CONTENT */}
       <div className="w-full md:w-[48%]">
         <h2 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
@@ -43,4 +43,3 @@ export const UploadSection = () => {
     </div>
   );
 };
-

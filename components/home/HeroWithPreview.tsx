@@ -20,7 +20,7 @@ export function HeroWithPreview({
 }: HeroWithPreviewProps) {
   return (
     <section className="w-full bg-[#FCFCFD]">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 mb-10">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mb-10">
         <div className="rounded-3xl bg-[#F9FAFF] px-6 sm:px-10 lg:px-16 py-16 text-center">
           {/* BADGE */}
           {badge && (
