@@ -166,7 +166,7 @@ export default function AnalyticsDashboard() {
             titleClassName="text-3xl md:text-4xl"
             description="Slice your data by segment, country, satisfaction, or team to turn every chart into a decision-making tool. Get straight deep into segmented data to extract the core value of customer data analysis."
             ctaText="Use Crisp for free"
-            imageSrc="/images/analytics/Zoom-illustration.png"
+            imageSrc="/images/analytics/zoom-illustration.png"
             layout="stacked"
           />
         </div>

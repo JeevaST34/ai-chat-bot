@@ -59,7 +59,7 @@ export function Navbar() {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="hidden lg:flex items-center gap-8">
             {navItems.map((item) => (
               <Link
                 key={item.label}
@@ -72,7 +72,7 @@ export function Navbar() {
           </nav>
 
           {/* Desktop Actions */}
-          <div className="hidden md:flex items-center gap-6">
+          <div className="hidden lg:flex items-center gap-6">
             <Link
               href="/auth/logIn"
               className="text-[14px] font-medium text-gray-700 hover:text-[#1E6BFF]"
@@ -89,7 +89,7 @@ export function Navbar() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden"
+            className="lg:hidden"
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label="Toggle Menu"
           >
@@ -127,7 +127,7 @@ export function Navbar() {
 
         {/* Mobile Menu */}
         {menuOpen && (
-          <div className="md:hidden border-t border-gray-200 bg-white">
+          <div className="lg:hidden border-t border-gray-200 bg-white">
             <div className="px-6 py-4 flex flex-col gap-4">
               {navItems.map((item) => (
                 <Link
