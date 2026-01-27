@@ -3,7 +3,7 @@
 import { useState, useMemo } from "react";
 import Marquee from "react-fast-marquee";
 import Image from "next/image";
-import {brands} from "@/lib/Constants";
+import { brands } from "@/lib/Constants";
 
 const tabs = [
   "All",
@@ -15,7 +15,7 @@ const tabs = [
   "Real Estate",
 ];
 
- export function BrandMarquee() {
+export function BrandMarquee() {
   const [activeTab, setActiveTab] = useState("All");
 
   const filteredBrands = useMemo(() => {
@@ -26,7 +26,7 @@ const tabs = [
   return (
     <section className="py-16 bg-white">
       {/* Title */}
-      <h2 className="text-center text-xl font-semibold mb-6">
+      <h2 className="text-center text-xl font-semibold mb-6 text-gray-950">
         Trusted by <span className="text-blue-600">350+</span> Global Brands
       </h2>
 
@@ -72,4 +72,3 @@ const tabs = [
     </section>
   );
 }
-

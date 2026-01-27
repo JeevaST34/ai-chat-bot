@@ -1,11 +1,6 @@
 "use client";
 
-import {
-  Check,
-  ArrowUpRight,
-
-  
-} from "lucide-react";
+import { Check, ArrowUpRight } from "lucide-react";
 
 import { otherFeatures } from "@/lib/Constants";
 import Image from "next/image";
@@ -22,8 +17,6 @@ const bulletPoints = [
   "Learning from Conversations",
 ];
 
-
-
 /* ---------------------------------- */
 /* COMPONENT */
 /* ---------------------------------- */
@@ -34,7 +27,7 @@ export function Features() {
       <div className="max-w-7xl mx-auto px-8 py-16">
         {/* Header */}
         <div className="text-center mb-14">
-          <h1 className="text-5xl font-bold text-gray-900 leading-tight">
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
             The solutions you need for <br /> outstanding customer support
           </h1>
           <p className="mt-4 text-gray-500 max-w-2xl mx-auto">
@@ -60,17 +53,17 @@ export function Features() {
         </div>
 
         {/* Hero Section */}
-        <div className="grid grid-cols-2 gap-16 mb-20">
+        <div className="grid sm:grid-cols-2 gap-8 md:gap-16 mb-20">
           <div>
-            <h2 className="text-4xl font-bold text-gray-900 leading-tight">
+            <h2 className="md:text-4xl text-2xl font-bold text-gray-900 leading-tight sm:text-left text-center">
               Customer Support <br /> All Rounders
             </h2>
 
-            <div className="flex gap-3 mt-6">
-              <button className="px-6 py-2.5 bg-blue-600 text-white rounded-lg text-sm">
+            <div className="flex gap-3 mt-6 sm:justify-start justify-center">
+              <button className="px-6 py-2.5 bg-blue-600 text-white rounded-lg text-sm cursor-pointer hover:bg-blue-700">
                 Pricing
               </button>
-              <button className="px-6 py-2.5 border rounded-lg text-sm text-gray-700">
+              <button className="px-6 py-2.5 border rounded-lg text-sm text-gray-700 cursor-pointer hover:bg-gray-50Free">
                 Book Demo
               </button>
             </div>
@@ -197,7 +190,7 @@ export function Features() {
           </p>
         </div>
 
-        <div className="grid grid-cols-4 gap-6">
+        <div className="grid lg:grid-cols-4 sm:grid-cols-2  gap-6">
           {otherFeatures.map((item) => {
             const Icon = item.icon;
 
@@ -227,9 +220,13 @@ export function Features() {
 
                 {/* Image Preview (NO padding) */}
                 <div className={`relative h-50 ${item.gradient}`}>
-                 
-
-                  <Image src={item.image} alt={item.title} width={400} height={160} className="absolute inset-0 w-full h-full object-cover" />
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    width={400}
+                    height={160}
+                    className="absolute inset-0 w-full h-full object-cover"
+                  />
                 </div>
               </div>
             );

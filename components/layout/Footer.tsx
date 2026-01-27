@@ -18,7 +18,7 @@ export function Footer() {
 
       <div className="max-w-7xl mx-auto px-6 py-10 lg:flex space-y-10">
         {/* LOGO + CTA */}
-        <div className="space-y-10 ps-4">
+        <div className="space-y-10">
           <a href="#" className="px-2">
             <Image
               src="/images/navbar/logo.svg"
@@ -28,12 +28,16 @@ export function Footer() {
               className="w-32"
             />
           </a>
+          <p className="text-gray-500 max-w-62.5 ">
+            Empowering businesses with intelligent AI solutions for
+            next-generation customer engagement.
+          </p>
 
-          <Button
+          {/* <Button
             text="Sign Up now"
             radius="rounded-4xl"
             onClick={() => navigate("/signup")}
-          />
+          /> */}
 
           <div className="flex items-center gap-4 text-lg px-2">
             <Image
@@ -196,7 +200,7 @@ export function Footer() {
                 </Link>
               </li>
               <li className="cursor-pointer hover:underline">
-                <Link href="/signup" className="cursor-pointer hover:underline">
+                <Link href="/auth/signUp" className="cursor-pointer hover:underline">
                   Sign Up
                 </Link>
               </li>

@@ -44,7 +44,7 @@ export function Hero() {
 
         {/* CTA */}
         <div className="mt-10 flex justify-center">
-          <button className="inline-flex items-center gap-3 rounded-full bg-white px-8 py-4 text-sm font-semibold text-slate-900 shadow-lg ring-1 ring-slate-200 transition hover:scale-105">
+          <button className="cursor-pointer inline-flex items-center gap-3 rounded-full bg-white px-8 py-4 text-sm font-semibold text-slate-900 shadow-lg ring-1 ring-slate-200 transition hover:scale-105">
             <span className="h-2 w-2 rounded-full bg-red-500" />
             BOOK A FREE DEMO
           </button>
@@ -68,4 +68,3 @@ export function Hero() {
     </section>
   );
 }
-

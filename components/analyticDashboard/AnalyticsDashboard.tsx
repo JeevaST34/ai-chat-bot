@@ -1,7 +1,7 @@
 import React from "react";
 import { Eye, Palette, Plane } from "lucide-react";
 import Image from "next/image";
-import Card from "@/components/common/Card";
+import { Card } from "@/components/common/Card";
 
 export default function AnalyticsDashboard() {
   return (

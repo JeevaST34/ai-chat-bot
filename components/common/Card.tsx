@@ -10,7 +10,7 @@ type CardProps = {
   layout?: "split" | "stacked";
 };
 
-export default function Card({
+export function Card({
   title,
   titleClassName,
   description,

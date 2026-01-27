@@ -3,11 +3,9 @@ import { StatCard } from "./statCard";
 import { InsightCard } from "./InsightCard";
 import Image from "next/image";
 
-
-
-export   function VisitorInsights() {
+export function VisitorInsights() {
   return (
-    <div className="w-full min-h-screen ">
+    <div className="w-full min-h-screen bg-white">
       {/* ================= HERO ================= */}
       <section className="bg-[linear-gradient(180deg,#EEF4FF_0%,#F8FAFF_45%,#FDF2F2_85%,white_65%)]">
         <div className="max-w-7xl mx-auto px-6 pt-20 text-center">
@@ -25,8 +23,13 @@ export   function VisitorInsights() {
           </p>
 
           <div className="mt-20 rounded-2xl p-6">
-         
-            <Image src="/images/visitor/visitordashboard.png" alt="Visitor analytics dashboard" width={800} height={450} className="w-full rounded-xl" />   
+            <Image
+              src="/images/visitor/visitordashboard.png"
+              alt="Visitor analytics dashboard"
+              width={800}
+              height={450}
+              className="w-full rounded-xl"
+            />
           </div>
         </div>
       </section>
@@ -50,16 +53,26 @@ export   function VisitorInsights() {
             className="w-full rounded-lg"
           /> */}
 
-          <Image src="/images/visitor/visitorprofile.png" alt="AI visitor profiles" width={600} height={400} className="w-full rounded-lg" />   
+          <Image
+            src="/images/visitor/visitorprofile.png"
+            alt="AI visitor profiles"
+            width={600}
+            height={400}
+            className="w-full rounded-lg"
+          />
         </div>
       </section>
 
       {/* ================= WHY SECTION ================= */}
       <section className="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         <div className="px-6 lg:order-1 order-2">
-         
-
-          <Image src="/images/visitor/visitorInsight-illustration.png" alt="Visitor illustration" width={600} height={400} className="img-fluid rounded-xl" />  
+          <Image
+            src="/images/visitor/visitorInsight-illustration.png"
+            alt="Visitor illustration"
+            width={600}
+            height={400}
+            className="img-fluid rounded-xl"
+          />
         </div>
 
         <div className="order-1 lg:order-2 ">
@@ -111,9 +124,13 @@ export   function VisitorInsights() {
         </p>
 
         <div className="p-10">
-       
-
-          <Image src="/images/visitor/chatHistory.png" alt="Chat History" width={800} height={450} className="img-fluid rounded-xl mx-auto" />      
+          <Image
+            src="/images/visitor/chatHistory.png"
+            alt="Chat History"
+            width={800}
+            height={450}
+            className="img-fluid rounded-xl mx-auto"
+          />
         </div>
       </section>
     </div>

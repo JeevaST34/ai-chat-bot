@@ -74,16 +74,16 @@ export function Navbar() {
           {/* Desktop Actions */}
           <div className="hidden md:flex items-center gap-6">
             <Link
-              href="/login"
+              href="/auth/logIn"
               className="text-[14px] font-medium text-gray-700 hover:text-[#1E6BFF]"
             >
               Login
             </Link>
             <Link
-              href="/demo"
+              href="/auth/signUp"
               className="bg-[#1E6BFF] text-white text-[14px] font-semibold px-5 py-2 rounded-full hover:bg-blue-700 transition"
             >
-              Book a demo
+              Sign Up
             </Link>
           </div>
 
@@ -142,18 +142,18 @@ export function Navbar() {
 
               <div className="pt-4 border-t flex flex-col gap-3">
                 <Link
-                  href="/login"
+                  href="/logIn"
                   onClick={() => setMenuOpen(false)}
                   className="text-[14px] font-medium text-gray-700"
                 >
                   Login
                 </Link>
                 <Link
-                  href="/demo"
+                  href="/signUp"
                   onClick={() => setMenuOpen(false)}
                   className="bg-[#1E6BFF] text-white text-center text-[14px] font-semibold py-2.5 rounded-full"
                 >
-                  Book a demo
+                  Sign Up
                 </Link>
               </div>
             </div>

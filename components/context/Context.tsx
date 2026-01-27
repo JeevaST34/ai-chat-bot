@@ -35,7 +35,7 @@ export default function Context() {
         </div>
       </section>
       <section className="py-20 bg-white">
-        <div className=" max-w-7xl mx-auto px-6 space-y-20  ">
+        <div className=" max-w-7xl mx-auto px-6 space-y-10  ">
           {ContextFeatures.map((item, index) => (
             <div
               key={index}
@@ -78,7 +78,7 @@ export default function Context() {
         </div>
       </section>
       {/* ================= CORE CONTEXT FEATURES (NEW) ================= */}
-      <section className="bg-white py-24">
+      <section className="bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-14 items-center">
             {/* Left */}

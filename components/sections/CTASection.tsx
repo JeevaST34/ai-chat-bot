@@ -71,6 +71,7 @@ export default function CTASection() {
               font-semibold
               transition
               mb-10
+              cursor-pointer
             "
           >
             Schedule a Demo

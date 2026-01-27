@@ -97,7 +97,7 @@ export function PricingSection() {
             </ul>
 
             <button
-              className={`mt-auto w-full py-3 rounded-xl font-semibold transition ${
+              className={`mt-auto w-full py-3 rounded-xl font-semibold transition cursor-pointer ${
                 plan.highlighted
                   ? "bg-blue-600 text-white hover:bg-blue-700"
                   : "bg-gray-900 text-white hover:bg-gray-800"
@@ -175,11 +175,11 @@ export function PricingSection() {
 
               {/* CTA CONTAINER */}
               <div className="bg-[#F6F7F9] rounded-[14px] p-4 inline-flex gap-4 flex-wrap">
-                <button className="px-6 py-2.25 rounded-lg border border-[#C9D2E3] text-[14px] font-medium text-[#1F2B4D] hover:bg-white transition">
+                <button className="px-6 py-2.25 rounded-lg border border-[#C9D2E3] text-[14px] font-medium text-[#1F2B4D] hover:bg-white transition cursor-pointer">
                   Let’s talk
                 </button>
 
-                <button className="px-6 py-2.25 rounded-lg bg-[#2563FF] text-[14px] font-medium text-white hover:bg-blue-600 transition">
+                <button className="px-6 py-2.25 rounded-lg bg-[#2563FF] text-[14px] font-medium text-white hover:bg-blue-600 transition cursor-pointer">
                   Get Started
                 </button>
               </div>
