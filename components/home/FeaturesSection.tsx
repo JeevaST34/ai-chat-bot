@@ -9,8 +9,8 @@ export function FeaturesSection() {
       <div className="max-w-300 mx-auto px-4 sm:px-6 lg:px-8 ">
         <HeroWithPreview
           badge="Revolutionize"
-          title="Introducing AI Chatbot, your AI-powered site search"
-          subtitle="Boost conversions and lighten the load on your support team"
+          title="AI Search, built into your chatbot experience"
+          subtitle="Help users find answers instantly through conversational search."
           buttonText="Start optimizing your site for free"
           image="/images/home/Margin.png"
         />

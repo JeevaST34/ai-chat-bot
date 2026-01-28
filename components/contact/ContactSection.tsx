@@ -7,10 +7,11 @@ export default function ContactForm() {
         {/* Header */}
         <div className="text-center mb-14">
           <h1 className="text-[36px] font-semibold text-[#0f172a]">
-            Get in Touch
+            Talk to our AI Chatbot Experts
           </h1>
           <p className="mt-3 text-[#6b7280] text-[16px]">
-            We’re committed to connecting with you to discuss your project
+            Have questions about AI chatbots, integrations, or pricing? Our team
+            is here to help
           </p>
         </div>
 
@@ -23,7 +24,9 @@ export default function ContactForm() {
             <div className="absolute top-24 right-14 w-20 h-20 bg-white/5 rounded-xl rotate-45"></div>
 
             {/* Title */}
-            <h2 className="text-[28px] font-semibold mb-10">Get in touch</h2>
+            <h2 className="text-[28px] font-semibold mb-10">
+              Contact Information
+            </h2>
 
             {/* Info */}
             <div className="space-y-8">
@@ -103,7 +106,7 @@ export default function ContactForm() {
             {/* Divider */}
             <div className="flex items-center gap-4 mt-10">
               <span className="w-10 h-px bg-white/50"></span>
-              <p className="text-[14px]">Connect with us:</p>
+              <p className="text-[14px]">Follow us for updates</p>
             </div>
 
             {/* Social Icons */}

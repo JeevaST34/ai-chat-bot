@@ -1,16 +1,16 @@
 import { integrations } from "@/lib/Constants";
 
 export function NativeIntegration() {
-
   return (
-    <section className="bg-[#F9F9FF] py-10">
+    <section className="integration-native-bg py-10">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-3xl font-semibold text-gray-900 mb-2">
-          Native Integrations
+        <h2 className="text-3xl font-bold text-gray-900 mb-2">
+          Built-in integrations for your AI chatbot
         </h2>
-        <p className="text-gray-900 mb-10 text-xl font-light">
-          Connect Landbot to the tools you love using our native integrations
-          and start exchanging data easily, without coding.
+
+        <p className="text-gray-500 mb-10 text-lg leading-relaxed sm:leading-8">
+          Set up powerful AI chatbot integrations in minutes — no coding
+          required.
         </p>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
@@ -29,9 +29,7 @@ export function NativeIntegration() {
                 {item.title}
               </h3>
 
-              <p className="text-medium text-gray-600 mb-4 leading-relaxed">
-                {item.desc}
-              </p>
+              <p className="text-gray-600 mb-4 leading-relaxed">{item.desc}</p>
 
               <button className="text-gray-400 text-sm hover:underline mt-auto mr-auto cursor-pointer">
                 View integration →

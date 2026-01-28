@@ -1,6 +1,5 @@
 @import "tailwindcss";
 
-
 @layer base {
   :root {
     --background: #ffffff;
@@ -27,4 +26,321 @@ body {
   background: var(--background);
   color: var(--foreground);
   /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+@layer utilities {
+  .bg-analytic-hero {
+    background-image: url("/hero-bg-analytic.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .auth-image-overlay {
+    background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.3),
+      #172554
+    );
+  }
+  .page-header-gradient {
+    background-image: linear-gradient(
+      to bottom,
+      theme(colors.blue.50),
+      white,
+      theme(colors.rose.50)
+    );
+  }
+  .contact-section-bg {
+    background-color: theme(colors.slate.100);
+  }
+
+  .contact-card-grid {
+    grid-template-columns: 28rem 1fr;
+  }
+
+  .contact-left-bg {
+    background-color: theme(colors.blue.900);
+  }
+
+  .contact-decor {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+  .context-hero-gradient {
+    background-image: linear-gradient(
+      to bottom,
+      theme(colors.blue.50),
+      theme(colors.slate.50),
+      theme(colors.rose.50),
+      white
+    );
+  }
+
+  /* FEATURE CARD BG */
+  .context-feature-bg {
+    background-color: theme(colors.blue.50);
+    border-color: theme(colors.blue.200);
+  }
+
+  /* CORE RADIAL */
+  .context-radial-bg {
+    background-image: radial-gradient(
+      circle at center,
+      theme(colors.blue.300),
+      transparent 70%
+    );
+  }
+
+  /* CTA LEFT / RIGHT */
+  .context-cta-left {
+    background-color: theme(colors.blue.100);
+  }
+
+  .context-cta-right {
+    background-color: theme(colors.blue.900);
+  }
+
+  /* CTA GRID */
+  .context-cta-grid {
+    grid-template-columns: 1fr 2fr;
+  }
+  .faq-container {
+    max-width: 56rem; /* ~900px */
+  }
+
+  .faq-header-width {
+    max-width: 40rem;
+  }
+
+  .faq-open-bg {
+    background-color: theme(colors.blue.900);
+  }
+
+  .faq-divider {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .feature-card {
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 45px rgba(0, 0, 0, 0.08);
+  }
+
+  .feature-card-hover {
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.06);
+  }
+
+  .feature-preview-height {
+    height: 12.5rem; /* ~200px */
+  }
+
+  .cta-radial-bg {
+    background-image: radial-gradient(
+      120% 120% at 50% 0%,
+      theme(colors.blue.500),
+      theme(colors.blue.900) 66%
+    );
+  }
+
+  /* CTA container width */
+  .cta-max {
+    max-width: 75rem; /* ~1200px */
+  }
+
+  /* CTA text width */
+  .cta-text-max {
+    max-width: 28rem;
+  }
+  .enterprise-card {
+    border-width: 3px;
+    border-color: theme(colors.blue.600);
+    border-radius: 1.75rem;
+  }
+
+  .enterprise-grid {
+    grid-template-columns: 1.15fr 1fr;
+  }
+
+  .enterprise-soft-bg {
+    background-color: theme(colors.slate.100);
+  }
+
+  .enterprise-accent {
+    color: theme(colors.blue.600);
+  }
+
+  .enterprise-check {
+    width: 1.125rem;
+    height: 1.125rem;
+    border: 1px solid theme(colors.blue.600);
+  }
+
+  .benefits-section-bg {
+    background-color: theme(colors.blue.50);
+  }
+
+  .knowledge-base-hero-gradient {
+    background-image: linear-gradient(
+      to bottom,
+      theme(colors.blue.50),
+      theme(colors.blue.100),
+      theme(colors.orange.50)
+    );
+  }
+
+  /* Knowledge Base – Glow blobs */
+  .knowledge-base-hero-glow {
+    width: 22rem;
+    height: 22rem;
+    filter: blur(6rem);
+    opacity: 0.2;
+  }
+
+  /* Knowledge Base – Spacing */
+  .knowledge-base-hero-padding {
+    padding-top: 7.5rem;
+    padding-bottom: 6rem;
+  }
+
+  /* Knowledge Base – Max widths */
+  .knowledge-base-hero-title {
+    max-width: 52rem;
+  }
+
+  .knowledge-base-hero-description {
+    max-width: 40rem;
+  }
+
+  .knowledge-base-hero-preview {
+    max-width: 62rem;
+  }
+
+  /* Knowledge Base – Shadows */
+  .knowledge-base-hero-shadow {
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.12);
+  }
+
+  .knowledge-base-pill-shadow {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  }
+
+  .knowledge-base-upload-box {
+    background-color: theme(colors.blue.600);
+  }
+
+  .knowledge-base-upload-muted {
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .integration-hero-gradient {
+    background-image: linear-gradient(
+      to bottom,
+      theme(colors.blue.50),
+      theme(colors.blue.100),
+      theme(colors.orange.50)
+    );
+  }
+  .integration-native-bg {
+    background-color: theme(colors.slate.50);
+  }
+  .integration-native-bg {
+    background-color: theme(colors.slate.50);
+  }
+  .home-feature-card-bg {
+    background-color: theme(colors.slate.50);
+  }
+
+  /* Home – Feature card image widths */
+  .home-feature-card-image {
+    max-width: 32rem;
+  }
+
+  /* Home – Feature card stacked image */
+  .home-feature-card-image-stacked {
+    max-width: 48rem;
+  }
+  .home-hero-bg {
+    background-color: theme(colors.slate.50);
+  }
+
+  .home-hero-inner-bg {
+    background-color: theme(colors.blue.50);
+  }
+
+  /* Home – Hero typography widths */
+  .home-hero-title {
+    max-width: 48rem;
+  }
+
+  .home-hero-subtitle {
+    max-width: 36rem;
+  }
+
+  .home-hero-preview {
+    max-width: 64rem;
+  }
+  .home-journey-bg {
+    background-color: theme(colors.white);
+  }
+
+  .home-journey-card {
+    padding: 1.5rem;
+    border-radius: 1rem;
+  }
+
+  .home-journey-label {
+    max-width: 12.5rem;
+  }
+  .home-tools-gradient {
+    background-image: linear-gradient(
+      to bottom,
+      theme(colors.blue.50),
+      theme(colors.white)
+    );
+  }
+
+  /* Home – Marquee spacing helpers */
+  .home-marquee-top {
+    margin-bottom: -3rem;
+  }
+
+  .home-marquee-bottom {
+    margin-top: -2rem;
+  }
+
+  .home-marquee-inner-top {
+    margin-bottom: 1.25rem;
+  }
+
+  .home-marquee-inner-bottom {
+    margin-bottom: 1rem;
+  }
+
+  /* Home – Core hub */
+  .home-tools-core {
+    background-color: theme(colors.blue.600);
+  }
+  .home-vendor-wrapper {
+    background-color: theme(colors.slate.50);
+    border: 1px solid theme(colors.slate.200);
+    border-radius: 1.25rem;
+  }
+
+  /* Home – Vendor table */
+  .home-vendor-table {
+    min-width: 56rem;
+  }
+
+  /* Home – Vendor check / cross */
+  .home-vendor-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  /* Home – Vendor accent */
+  .home-vendor-accent {
+    color: theme(colors.blue.600);
+  }
+
+  .home-vendor-muted {
+    color: theme(colors.slate.500);
+  }
 }

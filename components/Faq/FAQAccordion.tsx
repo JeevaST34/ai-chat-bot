@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { faqs } from "@/lib/Constants";
+import { Button } from "../common";
 
 export default function FAQAccordion() {
   const [openIndex, setOpenIndex] = useState<number | null>(1);
@@ -12,69 +13,69 @@ export default function FAQAccordion() {
 
   return (
     <section className="bg-white py-24">
-      <div className="max-w-225 mx-auto px-4">
-
+      <div className="faq-container mx-auto px-4 mb-3">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-[36px] font-semibold text-[#0f172a] mb-4">
-            Frequently Asked Question
+          <h2 className="text-3xl md:text-4xl font-semibold text-slate-900 mb-4">
+            Frequently Asked Questions
           </h2>
-          <p className="text-[#6b7280] text-[16px] max-w-160 mx-auto">
-            Find quick answers to the most common questions about our AI Chatbot platform
+
+          <p className="text-slate-500 text-base faq-header-width mx-auto">
+            Quick answers to common questions about using AI Chatbot to automate
+            customer conversations.
           </p>
         </div>
 
         {/* FAQ List */}
-        <div className="divide-y divide-[#e5e7eb]">
+        <div className="divide-y divide-slate-200">
           {faqs.map((faq, index) => {
             const isOpen = openIndex === index;
 
             return (
               <div key={index} className="py-5">
-
-                {/* OPEN STATE */}
                 {isOpen ? (
-                  <div className="bg-[#0b3f8f] rounded-[10px] px-6 py-5 text-white">
-
-                    {/* Question */}
+                  /* OPEN */
+                  <div className="faq-open-bg rounded-lg px-6 py-5 text-white">
                     <button
                       onClick={() => toggleFAQ(index)}
                       className="w-full flex items-center justify-between text-left"
                     >
-                      <span className="text-[16px] font-medium">
+                      <span className="text-base font-medium">
                         {faq.question}
                       </span>
-                      <span className="text-[22px] leading-none">×</span>
+                      <span className="text-xl leading-none">×</span>
                     </button>
 
-                    {/* Divider */}
-                    <div className="h-px bg-white/20 my-4" />
+                    <div className="h-px my-4 faq-divider" />
 
-                    {/* Answer */}
-                    <p className="text-[14px] leading-6 text-white/90">
+                    <p className="text-sm leading-6 text-white/90">
                       {faq.answer}
                     </p>
                   </div>
                 ) : (
-                  /* CLOSED STATE */
+                  /* CLOSED */
                   <button
                     onClick={() => toggleFAQ(index)}
                     className="w-full flex items-center justify-between text-left py-4"
                   >
-                    <span className="text-[16px] font-medium text-[#0f172a]">
+                    <span className="text-base font-medium text-slate-900">
                       {faq.question}
                     </span>
-                    <span className="text-[#9ca3af] text-[22px] leading-none">
+                    <span className="text-slate-400 text-xl leading-none">
                       +
                     </span>
                   </button>
                 )}
-
               </div>
             );
           })}
         </div>
       </div>
+      <Button
+        radius="rounded-lg"
+        text={"Still have questions? Let’s talk."}
+        className="mx-auto"
+      ></Button>
     </section>
   );
 }

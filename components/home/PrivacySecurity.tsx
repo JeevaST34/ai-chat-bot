@@ -12,7 +12,7 @@ export function PrivacySecurity() {
               🔒 Privacy & Security
             </p>
 
-            <h2 className="md:text-4xl font-bold text-gray-900 mb-5 text-center max-w-md mx-auto text-2xl">
+            <h2 className="md:text-4xl font-semibold text-gray-900 mb-5 text-center max-w-md mx-auto text-2xl">
               We'll never let you lose sleep over privacy and security concerns
             </h2>
 

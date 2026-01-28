@@ -15,7 +15,7 @@ export default function AuthCard({
       description: "Create your account. It's free and only takes a minute.",
     },
     login: {
-      title: "Welcome back !",
+      title: "Welcome back!",
       description:
         "Available at no cost for individuals. Team plans offer collaborative features.",
     },
@@ -32,7 +32,7 @@ export default function AuthCard({
         />
 
         {/* Overlay */}
-        <div className="absolute inset-0 bg-linear-to-b from-white/30 to-[#172554]" />
+        <div className="absolute inset-0 auth-image-overlay" />
 
         {/* Text */}
         <div className="relative z-10 h-full flex flex-col justify-center px-10 text-white">
@@ -43,7 +43,7 @@ export default function AuthCard({
         </div>
       </div>
 
-      {/* RIGHT : Form Container */}
+      {/* RIGHT : Form */}
       <div className="px-6 py-8 sm:px-10 sm:py-12">{children}</div>
     </div>
   );

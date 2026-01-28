@@ -18,8 +18,8 @@ export function VisitorInsights() {
           </h1>
 
           <p className="mt-4 max-w-3xl mx-auto text-gray-500">
-            AI-powered analytics for understanding visitor behavior, tracking
-            interactions, and generating actionable insights.
+            Understand visitor behavior, track chatbot interactions, and uncover
+            actionable insights.
           </p>
 
           <div className="mt-20 rounded-2xl p-6">
@@ -41,8 +41,8 @@ export function VisitorInsights() {
             AI-Generated Visitor Profiles
           </h2>
           <p className="mt-4 text-gray-500 max-w-md mx-auto lg:mx-0">
-            AI-generated profiles based on interaction patterns, demographics,
-            and behavior to personalize conversations and predict needs.
+            Automatically build visitor profiles from chatbot conversations and
+            behavior.
           </p>
         </div>
 

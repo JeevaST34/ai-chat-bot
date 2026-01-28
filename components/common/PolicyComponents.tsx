@@ -19,12 +19,12 @@ type ParagraphProps = {
 };
 
 export const PageHeader = ({ title, subtitle }: PageHeaderProps) => (
-  <div className="bg-linear-to-b from-blue-50 via-white to-rose-50">
+  <div className="page-header-gradient">
     <div className="max-w-4xl mx-auto px-6 py-16 text-center">
       <h1 className="text-3xl md:text-4xl font-semibold text-gray-900">
         {title}
       </h1>
-      <p className="mt-4 text-gray-600">{subtitle}</p>
+      {subtitle && <p className="mt-4 text-gray-600">{subtitle}</p>}
     </div>
   </div>
 );

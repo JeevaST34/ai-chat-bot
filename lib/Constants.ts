@@ -128,21 +128,21 @@ export const plans = [
 
 export const otherFeatures = [
   {
-    title: "Emotion & Intent Detection",
+    title: "Emotion AI",
     icon: Smile,
     gradient: "bg-[#FEF3C7]",
     iconBg: "bg-orange-400",
     image: "/images/features/card-1.png",
   },
   {
-    title: "AI-Curated Lead Forms",
+    title: "AI Lead Forms",
     icon: FileText,
     gradient: "bg-[#DCFCE7]",
     iconBg: "bg-green-500",
     image: "/images/features/card-2.png",
   },
   {
-    title: "Custom Chat Flows",
+    title: "Chat Flows",
     icon: Workflow,
     gradient: "bg-[#E0E7FF]",
     iconBg: "bg-indigo-600",
@@ -150,7 +150,7 @@ export const otherFeatures = [
     dark: true,
   },
   {
-    title: "Track Team Activity",
+    title: "Team Tracking",
     icon: BarChart3,
     gradient: "bg-[#EDE9FE]",
     iconBg: "bg-purple-500",
@@ -164,21 +164,21 @@ export const otherFeatures = [
     image: "/images/features/card-5.png",
   },
   {
-    title: "Auto Collect Feedback",
+    title: "Feedback AI",
     icon: Star,
     gradient: "bg-[#EDE9FE]",
     iconBg: "bg-purple-500",
     image: "/images/features/card-6.png",
   },
   {
-    title: "Collect Phone/Email",
+    title: "Human Handoff",
     icon: Phone,
     gradient: "bg-[#FCE7F3]",
     iconBg: "bg-pink-400",
     image: "/images/features/card-7.png",
   },
   {
-    title: "Auto-tagging by AI",
+    title: "AI Tagging",
     icon: Tag,
     gradient: "bg-[#EDE9FE]",
     iconBg: "bg-purple-500",
@@ -293,7 +293,7 @@ export const benefits = [
   {
     icon: "🧠",
     title: "24/7 Availability",
-    desc: "Your support never sleeps, enhancing customer satisfaction.",
+    desc: "Your AI chatbot stays available 24/7 with accurate answers.",
   },
   {
     icon: "❓",
@@ -308,12 +308,12 @@ export const benefits = [
   {
     icon: "💡",
     title: "Reduced Response Times",
-    desc: "Immediate answers for common queries, faster ticket creation for complex issues.",
+    desc: "Reduce response time by seconds, not minutes.",
   },
   {
     icon: "📊",
     title: "Data-Driven Insights:",
-    desc: "Gain valuable insights from AI-customer interactions to improve your support strategy.",
+    desc: "Improve chatbot answers using real user interaction data.",
   },
 ];
 export const versions = [
@@ -340,8 +340,7 @@ export const versions = [
 export const primaryFeatures = [
   {
     title: "AI Auto-Reply",
-    description:
-      "Provide 24/7 support in multiple languages and respond to your customers under 10 seconds.",
+    description: "Instant AI replies in multiple languages, 24/7",
     icon: MessageSquare,
     iconBg: "bg-green-500",
     cardBg: "bg-green-50",
@@ -350,8 +349,7 @@ export const primaryFeatures = [
   },
   {
     title: "Helpdesk",
-    description:
-      "Easily manage a large support team with flexible chat assignment methods and track performance with CSAT reports.",
+    description: "AI + human conversations in one smart inbox.",
     icon: Headphones,
     iconBg: "bg-indigo-600",
     cardBg: "bg-indigo-50",
@@ -360,8 +358,7 @@ export const primaryFeatures = [
   },
   {
     title: "Ticket Management",
-    description:
-      "Keep support organized, efficient and stress-free for your team and customers.",
+    description: "AI-powered ticket organization and prioritization.",
     icon: Ticket,
     iconBg: "bg-sky-500",
     cardBg: "bg-sky-50",
@@ -372,22 +369,22 @@ export const primaryFeatures = [
 
 export const journeyStats = [
   {
-    value: "8+",
-    label: "years in the conversational AI space",
+    value: "10M+",
+    label: "customer conversations automated",
     bg: "bg-green-50",
     border: "border-green-300",
     icon: "🌱",
   },
   {
     value: "800+",
-    label: "global brands have worked with us",
+    label: "teams using our AI chatbot daily",
     bg: "bg-pink-50",
     border: "border-pink-300",
     icon: "🤝",
   },
   {
-    value: "60M+",
-    label: "customer conversations automated",
+    value: "40%",
+    label: "reduction in support workload",
     bg: "bg-blue-50",
     border: "border-blue-300",
     icon: "💬",
@@ -432,7 +429,7 @@ export const integrations = [
   {
     icon: "/images/integration/zapier.png",
     title: "Zapier",
-    desc: "Connect Landbot with 4000+ apps and automate workflows.",
+    desc: "Connect Chatbot with 4000+ apps and automate workflows.",
   },
   {
     icon: "/images/integration/webflow.png",
@@ -548,7 +545,7 @@ export const visitorIntegrations = [
   {
     icon: "/images/visitor/zapier.png",
     title: "Zapier",
-    desc: "Connect Landbot with 4000+ apps and automate workflows.",
+    desc: "Connect Chatbot with 4000+ apps and automate workflows.",
   },
   {
     icon: "/images/visitor/webflow.png",

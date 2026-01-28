@@ -2,30 +2,30 @@
 
 import Image from "next/image";
 
-export  function HeroSection() {
+export function HeroSection() {
   return (
-    <section className="relative w-full overflow-hidden bg-linear-to-b from-[#EEF4FF] via-[#F3F7FF] to-[#FFF5F0]">
-      {/* Background blur accents */}
-      <div className="absolute -top-30 -left-30 h-90 w-90 rounded-full bg-blue-300/20 blur-[120px]" />
-      <div className="absolute -bottom-30 -right-30 h-90 w-90 rounded-full bg-pink-300/20 blur-[120px]" />
+    <section className="relative w-full overflow-hidden knowledge-base-hero-gradient">
+      {/* Background glows */}
+      <div className="absolute -top-32 -left-32 knowledge-base-hero-glow rounded-full bg-blue-300" />
+      <div className="absolute -bottom-32 -right-32 knowledge-base-hero-glow rounded-full bg-pink-300" />
 
-      <div className="relative mx-auto  px-6 pt-30 pb-24 text-center">
+      <div className="relative mx-auto px-6 knowledge-base-hero-padding text-center">
         {/* Badge */}
-        <p className="mb-5 text-[13px] font-medium tracking-wide text-blue-600">
+        <p className="mb-5 text-xs font-medium tracking-wide text-blue-600">
           AI-Powered Platform
         </p>
 
         {/* Heading */}
-        <h1 className="mx-auto max-w-215 text-[44px] font-semibold leading-[1.15] text-gray-900 sm:text-[52px]">
-          Intelligent Knowledge
+        <h1 className="mx-auto knowledge-base-hero-title text-4xl sm:text-5xl font-semibold leading-tight text-gray-900">
+          AI-Powered Knowledge Base
           <br />
-          Management Platform
+          for Smarter Chatbots
         </h1>
 
         {/* Description */}
-        <p className="mx-auto mt-6 max-w-180 text-[16px] leading-[1.6] text-gray-600">
-          Centralize, tag, and access your documents instantly using AI-powered
-          knowledge workflows and chatbot intelligence.
+        <p className="mx-auto mt-6 knowledge-base-hero-description text-base leading-relaxed text-gray-600">
+          Centralize, organize, and power your AI chatbot with accurate,
+          up-to-date knowledge.
         </p>
 
         {/* Feature Pills */}
@@ -37,17 +37,21 @@ export  function HeroSection() {
           ].map((item) => (
             <div
               key={item.label}
-              className="flex items-center gap-2 rounded-xl bg-white px-4 py-2 text-[14px] font-medium text-gray-700 shadow-[0_6px_20px_rgba(0,0,0,0.08)]"
+              className="flex items-center gap-2 rounded-xl bg-white px-4 py-2 text-sm font-medium text-gray-700 knowledge-base-pill-shadow"
             >
               <span className="text-blue-600">{item.icon}</span>
               {item.label}
             </div>
           ))}
         </div>
+        {/* Description */}
+        <p className="mx-auto mt-6 knowledge-base-hero-description text-base leading-relaxed text-gray-600">
+          Built to improve chatbot accuracy and speed.
+        </p>
 
         {/* Dashboard Preview */}
-        <div className="mt-18 flex justify-center">
-          <div className="relative w-full max-w-250 overflow-hidden rounded-2xl shadow-[0_30px_80px_rgba(0,0,0,0.12)]">
+        <div className="mt-16 flex justify-center">
+          <div className="relative w-full knowledge-base-hero-preview overflow-hidden rounded-2xl knowledge-base-hero-shadow">
             <Image
               src="/images/knowledgeBase/hero-img.png"
               alt="Knowledge base dashboard"

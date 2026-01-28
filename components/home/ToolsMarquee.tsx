@@ -2,45 +2,29 @@
 
 import Marquee from "react-fast-marquee";
 import Image from "next/image";
-import {brands} from "@/lib/Constants";
+import { brands } from "@/lib/Constants";
 
-const topIcons = [
-  "/icons/aws.svg",
-  "/icons/discord.svg",
-  "/icons/github.svg",
-  "/icons/google-calendar.svg",
-  "/icons/hubspot.svg",
-  "/icons/notion.svg",
-  "/icons/mailchimp.svg",
-  "/icons/jira.svg",
-  "/icons/slack.svg",
-  "/icons/whatsapp.svg",
-];
-
-const bottomIcons = [
-  "/icons/brave.svg",
-  "/icons/postman.svg",
-  "/icons/fire.svg",
-  "/icons/analytics.svg",
-  "/icons/linear.svg",
-  "/icons/google-ads.svg",
-  "/icons/google-drive.svg",
-  "/icons/openai.svg",
-  "/icons/aws-lambda.svg",
-  "/icons/search.svg",
-];
-
-export function   ToolsMarquee() {
+export function ToolsMarquee() {
   return (
-    <section className="w-full py-28 bg-linear-to-b from-blue-50 to-white overflow-hidden">
+    <section className="w-full py-28 home-tools-gradient overflow-hidden">
       {/* Heading */}
-      <h2 className="text-center text-3xl md:text-4xl font-semibold text-gray-900 mb-16">
-        Connect with tools where your data lies
+      <h2 className="md:text-4xl text-2xl font-bold text-center mb-2 text-black">
+        Connect your AI chatbot to the tools you already use
       </h2>
 
+      <p className="text-gray-500 text-center mb-16 max-w-2xl mx-auto">
+        Sync knowledge from CRMs, docs, and support tools seamlessly.
+      </p>
+
       {/* TOP MARQUEE */}
-      <Marquee speed={35} gradient={false} pauseOnHover autoFill className="-mb-12.5">
-        <div className="flex gap-8 px-8 mb-5">
+      <Marquee
+        speed={35}
+        gradient={false}
+        pauseOnHover
+        autoFill
+        className="home-marquee-top"
+      >
+        <div className="flex gap-8 px-8 home-marquee-inner-top">
           {brands.map((brand, i) => (
             <IconCard key={i} src={brand.logo} />
           ))}
@@ -54,21 +38,26 @@ export function   ToolsMarquee() {
           <div className="w-32 h-32 rounded-full border border-blue-300 absolute" />
         </div>
 
-        <div className="relative z-10 w-20 h-20 rounded-2xl bg-[#1476fe] flex items-center justify-center shadow-xl">
-          <Image src="/images/home/Tars Logo.svg" alt="Core" width={40} height={40} />
+        <div className="relative z-10 w-20 h-20 rounded-2xl home-tools-core flex items-center justify-center shadow-xl">
+          <Image
+            src="/images/home/Tars Logo.svg"
+            alt="Core"
+            width={40}
+            height={40}
+          />
         </div>
       </div>
 
-      {/* BOTTOM MARQUEE (REVERSE) */}
+      {/* BOTTOM MARQUEE */}
       <Marquee
         speed={35}
         gradient={false}
         direction="right"
         pauseOnHover
         autoFill
-        className="-mt-7.5"
+        className="home-marquee-bottom"
       >
-        <div className="flex gap-8 px-8 mb-3.75">
+        <div className="flex gap-8 px-8 home-marquee-inner-bottom">
           {brands.map((brand, i) => (
             <IconCard key={i} src={brand.logo} />
           ))}
@@ -83,18 +72,8 @@ export function   ToolsMarquee() {
 /* -------------------------------- */
 export function IconCard({ src }: { src: string }) {
   return (
-    <div
-      className="
-        w-14 h-14 md:w-16 md:h-16
-        rounded-xl
-        bg-white
-        shadow-md
-        flex items-center justify-center
-        transition-transform
-        hover:scale-110
-      "
-    >
-      <Image src={src} alt="img" width={28} height={28} />
+    <div className="w-14 h-14 md:w-16 md:h-16 rounded-xl bg-white shadow-md flex items-center justify-center transition-transform hover:scale-110">
+      <Image src={src} alt="icon" width={28} height={28} />
     </div>
   );
 }

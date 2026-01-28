@@ -32,14 +32,14 @@ export function Hero() {
 
         {/* Headline */}
         <h1 className="mx-auto max-w-4xl text-4xl font-semibold leading-tight text-slate-900 md:text-5xl">
-          Intelligent Conversations. Real Results.
-          <span className="block text-blue-600">Powered By AI Chatbot</span>
+          AI Chatbots that convert
+          <span className="block text-blue-600">visitors into customers</span>
         </h1>
 
         {/* Subtitle */}
         <p className="mx-auto mt-6 max-w-2xl text-base text-slate-600 md:text-lg">
-          Built For Smart, Human-Like Customer Service. Launch Multi-Tenant AI
-          Agents On Your Website In Minutes.
+          Automate support, qualify leads, and boost conversions with 24/7
+          AI-powered conversations.
         </p>
 
         {/* CTA */}

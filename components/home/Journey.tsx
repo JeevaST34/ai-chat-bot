@@ -6,10 +6,11 @@ export function Journey() {
     <section className="w-full py-24 bg-white">
       {/* Heading */}
       <div className="text-center max-w-4xl mx-auto mb-16">
-        <h2 className="text-[40px] font-semibold text-gray-900 leading-tight">
+        <h2 className="md:text-4xl text-2xl font-bold text-center mb-2 text-black">
           Our journey in a few numbers
         </h2>
-        <p className="text-gray-500 mt-4 text-base leading-relaxed">
+
+        <p className="text-gray-500 text-center mb-10 max-w-2xl mx-auto">
           With AI Chatbot you can build Conversational AI Agents that truly
           understand your needs and create intelligent conversations.
         </p>
@@ -35,9 +36,7 @@ export function Journey() {
               {item.icon}
             </div>
 
-            <h3 className="text-3xl font-semibold text-gray-900">
-              {item.value}
-            </h3>
+            <h3 className="text-3xl font-bold text-gray-900">{item.value}</h3>
 
             <p className="mt-2 text-sm text-gray-600 leading-snug max-w-50">
               {item.label}

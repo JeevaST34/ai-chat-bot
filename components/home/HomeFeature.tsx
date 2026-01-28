@@ -9,8 +9,8 @@ export function HomeFeature() {
       </h2>
 
       <p className="text-gray-500 text-center mb-10 max-w-2xl mx-auto">
-        Design AI Chatbots that understand the nuances of language and can
-        deliver personalized experiences at scale.
+        Our AI chatbots understand intent, respond naturally, and resolve
+        customer queries without human intervention.
       </p>
 
       <div className="space-y-14">

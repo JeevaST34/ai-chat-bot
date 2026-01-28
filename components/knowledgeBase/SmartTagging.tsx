@@ -9,7 +9,7 @@ export const SmartTagging = () => {
       </h2>
 
       <p className="text-gray-600 text-lg mt-3 mb-12">
-        AI-powered semantic categorization
+        Automatically organize content for faster chatbot retrieval.
       </p>
 
       {/* Image Wrapper */}

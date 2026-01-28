@@ -1,14 +1,14 @@
+import { benefits } from "../../lib/Constants";
 
-import {benefits} from '../../lib/Constants';
- export const BenefitsSection = () => {
+export const BenefitsSection = () => {
   return (
-    <div className="w-full bg-[#E7F0FF] py-20 px-6 md:px-16">
+    <div className="w-full benefits-section-bg py-20 px-6 md:px-16">
       <h2 className="text-center text-4xl md:text-5xl font-bold text-gray-900 mb-14">
         Benefits That Speak Volumes
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-7xl mx-auto">
-        {/* Top Row - 3 Cards */}
+        {/* Top Row */}
         {benefits.slice(0, 3).map((item, index) => (
           <div
             key={index}
@@ -22,7 +22,7 @@ import {benefits} from '../../lib/Constants';
           </div>
         ))}
 
-        {/* Bottom Row - 2 Cards spanning full width */}
+        {/* Bottom Row */}
         <div className="md:col-span-2 bg-white rounded-2xl shadow-sm p-8 border border-gray-100">
           <div className="text-4xl mb-4">💡</div>
           <h3 className="text-xl font-semibold text-gray-900">
@@ -42,4 +42,3 @@ import {benefits} from '../../lib/Constants';
     </div>
   );
 };
-

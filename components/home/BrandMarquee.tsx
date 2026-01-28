@@ -26,9 +26,13 @@ export function BrandMarquee() {
   return (
     <section className="py-16 bg-white">
       {/* Title */}
-      <h2 className="text-center text-xl font-semibold mb-6 text-gray-950">
+      <h2 className="md:text-4xl text-2xl font-bold text-center mb-4 text-black">
         Trusted by <span className="text-blue-600">350+</span> Global Brands
       </h2>
+      <p className="text-gray-500 text-center mb-10 max-w-2xl mx-auto">
+        Trusted by fast-growing teams and global brands to automate customer
+        conversations.
+      </p>
 
       {/* Tabs */}
       <div className="flex flex-wrap justify-center gap-3 mb-10">

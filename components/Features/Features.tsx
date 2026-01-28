@@ -28,34 +28,23 @@ export function Features() {
         {/* Header */}
         <div className="text-center mb-14">
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
-            The solutions you need for <br /> outstanding customer support
+            AI Chatbot solutions for outstanding <br /> customer support
           </h1>
           <p className="mt-4 text-gray-500 max-w-2xl mx-auto">
-            As one of our customers says: “It’s more than tools — it’s a
-            complete customer service operation.”
+            Automate conversations, resolve issues faster, and scale support
+            with AI-powered chatbots.
           </p>
         </div>
 
         {/* Tabs */}
-        <div className="flex justify-center gap-3 mb-16">
-          {tabs.map((tab, i) => (
-            <button
-              key={tab}
-              className={`px-6 py-2 text-sm rounded-lg transition ${
-                i === 0
-                  ? "bg-blue-50 text-blue-600 font-medium"
-                  : "text-gray-500 hover:bg-gray-50"
-              }`}
-            >
-              {tab}
-            </button>
-          ))}
-        </div>
+        <p className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight text-center mb-16">
+          Core AI Chatbot Capabilities
+        </p>
 
         {/* Hero Section */}
         <div className="grid sm:grid-cols-2 gap-8 md:gap-16 mb-20">
           <div>
-            <h2 className="md:text-4xl text-2xl font-bold text-gray-900 leading-tight sm:text-left text-center">
+            <h2 className="md:text-4xl text-2xl font-semibold text-gray-900 leading-tight sm:text-left text-center">
               Customer Support <br /> All Rounders
             </h2>
 
@@ -64,15 +53,15 @@ export function Features() {
                 Pricing
               </button>
               <button className="px-6 py-2.5 border rounded-lg text-sm text-gray-700 cursor-pointer hover:bg-gray-50Free">
-                Book Demo
+                View Plans
               </button>
             </div>
           </div>
 
           <div>
             <h3 className="font-semibold text-gray-900 mb-4">
-              Use AI modifiers to engage visitors, qualify leads and route them
-              to the right sales reps.
+              Use AI to engage customers instantly, understand intent, and route
+              conversations automatically.
             </h3>
 
             <div className="space-y-3 mb-6">
@@ -183,7 +172,7 @@ export function Features() {
         {/* Other Features */}
         <div className="text-center mb-10">
           <h2 className="text-3xl font-bold text-gray-900">
-            Other features to power your business
+            Advanced AI Chatbot features
           </h2>
           <p className="text-sm text-gray-500 mt-2">
             Extra capabilities to streamline your workflows

@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { Button } from "../common";
+import clsx from "clsx";
 
 interface FeatureCardProps {
   title: string;
@@ -20,57 +21,64 @@ export default function FeatureCard({
   image,
   imageAlt = "",
   reverse = false,
-  layout = "default", // "default" | "stacked"
+  layout = "default",
 }: FeatureCardProps) {
   const isStacked = layout === "stacked";
 
   return (
     <div
-      className={`
-        flex items-center gap-12 bg-[#FCFCFD] p-5 rounded-3xl
-        ${
-          isStacked
-            ? "flex-col text-left"
-            : "flex-col lg:flex-row justify-between"
-        }
-        ${!isStacked && reverse ? "lg:flex-row-reverse text-right" : ""}
-      `}
+      className={clsx(
+        "flex gap-12 p-6 rounded-3xl home-feature-card-bg",
+        isStacked
+          ? "flex-col items-start"
+          : "flex-col lg:flex-row items-center justify-between",
+        !isStacked && reverse && "lg:flex-row-reverse",
+      )}
     >
-      {/* TEXT SECTION */}
-      <div className={`max-w-xl ${isStacked ? "mx-auto" : ""}`}>
-        <h2 className="text-[28px] sm:text-[34px] font-semibold text-gray-900 leading-tight mb-4">
+      {/* TEXT */}
+      <div className={clsx("max-w-xl", isStacked && "mx-auto")}>
+        <h2 className="text-2xl sm:text-3xl font-semibold text-gray-900 leading-tight mb-4">
           {title}
         </h2>
 
-        <p className="text-gray-600 text-[15px] leading-relaxed mb-6">
+        <p className="text-gray-600 text-base leading-relaxed mb-6">
           {description}
         </p>
 
         <div
-          className={
-            isStacked ? "flex justify-start" : reverse ? "flex justify-end" : ""
-          }
+          className={clsx(
+            "flex",
+            isStacked
+              ? "justify-start"
+              : reverse
+                ? "justify-end"
+                : "justify-start",
+          )}
         >
           <Button text={btnText} />
         </div>
       </div>
 
-      {/* IMAGE SECTION */}
+      {/* IMAGE */}
       <div
-        className={`relative w-full ${isStacked ? "max-w-3xl" : "max-w-130"}`}
+        className={clsx(
+          "relative w-full",
+          isStacked
+            ? "home-feature-card-image-stacked mx-auto"
+            : "home-feature-card-image",
+        )}
       >
-        <div className="">
-          <Image
-            src={image}
-            alt={imageAlt}
-            width={900}
-            height={600}
-            className={`h-auto rounded-xl ${
-              isStacked ? "w-full" : "w-1/2 mx-auto"
-            }`}
-            priority
-          />
-        </div>
+        <Image
+          src={image}
+          alt={imageAlt}
+          width={900}
+          height={600}
+          className={clsx(
+            "h-auto rounded-xl",
+            isStacked ? "w-full" : "w-1/2 mx-auto",
+          )}
+          priority
+        />
       </div>
     </div>
   );
