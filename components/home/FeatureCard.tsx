@@ -75,7 +75,7 @@ export default function FeatureCard({
           height={600}
           className={clsx(
             "h-auto rounded-xl",
-            isStacked ? "w-full" : "w-1/2 mx-auto",
+            isStacked ? "w-full" : "mx-auto",
           )}
           priority
         />

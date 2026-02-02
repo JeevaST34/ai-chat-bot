@@ -4,7 +4,13 @@
   :root {
     --background: #ffffff;
     --foreground: #171717;
-    --hero-gradient: linear-gradient(179deg, #ebf2fc 39.13%, #f9edef 93.48%);
+    --hero-gradient: linear-gradient(
+      180deg,
+      #eef4ff 0%,
+      #f8faff 45%,
+      #fdf2f2 85%,
+      white 65%
+    );
   }
 }
 
@@ -66,13 +72,7 @@ body {
     background-color: rgba(255, 255, 255, 0.05);
   }
   .context-hero-gradient {
-    background-image: linear-gradient(
-      to bottom,
-      theme(colors.blue.50),
-      theme(colors.slate.50),
-      theme(colors.rose.50),
-      white
-    );
+    background-image: var(--hero-gradient);
   }
 
   /* FEATURE CARD BG */
@@ -178,11 +178,12 @@ body {
   }
 
   .knowledge-base-hero-gradient {
-    background-image: linear-gradient(
-      to bottom,
-      theme(colors.blue.50),
-      theme(colors.blue.100),
-      theme(colors.orange.50)
+    background: linear-gradient(
+      180deg,
+      #eef4ff 0%,
+      #f8faff 45%,
+      #fdf2f2 85%,
+      white 65%
     );
   }
 

@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export function HeroSection() {
   return (
-    <section className="relative w-full overflow-hidden knowledge-base-hero-gradient">
+    <section className="relative w-full overflow-hidden knowledge-base-hero-gradient ">
       {/* Background glows */}
       <div className="absolute -top-32 -left-32 knowledge-base-hero-glow rounded-full bg-blue-300" />
       <div className="absolute -bottom-32 -right-32 knowledge-base-hero-glow rounded-full bg-pink-300" />

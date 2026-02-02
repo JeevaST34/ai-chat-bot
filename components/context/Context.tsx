@@ -7,7 +7,7 @@ export default function Context() {
   return (
     <div className="w-full min-h-screen">
       {/* HERO */}
-      <section className="context-hero-gradient">
+      <section className="context-hero-gradient ">
         <div className="max-w-7xl mx-auto px-6 pt-20 text-center">
           <p className="text-sm font-medium text-blue-600">
             AI-Powered Platform

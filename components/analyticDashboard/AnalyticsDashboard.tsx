@@ -7,7 +7,7 @@ export default function AnalyticsDashboard() {
   return (
     <div className="w-full min-h-screen bg-white">
       {/* HERO */}
-      <section className="bg-linear-to-b from-blue-50 via-slate-50 to-white">
+      <section className="bg-[linear-gradient(180deg,#EEF4FF_0%,#F8FAFF_45%,#FDF2F2_85%,white_65%)]">
         <div className="max-w-7xl mx-auto px-6 pt-16 text-center">
           <p className="text-sm font-medium text-blue-600">
             AI-Powered Platform

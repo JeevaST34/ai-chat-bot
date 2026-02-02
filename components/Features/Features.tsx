@@ -208,13 +208,13 @@ export function Features() {
                 </div>
 
                 {/* Image Preview (NO padding) */}
-                <div className={`relative h-50 ${item.gradient}`}>
+                <div className={`relative h-50 `}>
                   <Image
                     src={item.image}
                     alt={item.title}
                     width={400}
                     height={160}
-                    className="absolute inset-0 w-full h-full object-cover"
+                    className="absolute inset-0 mx-auto h-full object-contain"
                   />
                 </div>
               </div>

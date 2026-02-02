@@ -19,8 +19,8 @@ export function HeroWithPreview({
   image,
 }: HeroWithPreviewProps) {
   return (
-    <section className="w-full home-hero-bg">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mb-10">
+    <section className="w-full">
+      <div className="max-w-6xl mx-auto  mb-10">
         <div className="rounded-3xl home-hero-inner-bg px-6 sm:px-10 lg:px-16 py-16 text-center">
           {/* BADGE */}
           {badge && (

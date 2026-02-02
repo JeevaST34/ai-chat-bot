@@ -2,15 +2,22 @@ import Image from "next/image";
 
 export function Hero() {
   return (
-    <section
-      className="relative overflow-hidden"
-      style={{ background: "var(--hero-gradient)" }}
-    >
+    <section className="relative overflow-hidden ">
       {/* Background connection lines (decorative) */}
-      <div className="absolute inset-0 pointer-events-none">
+      {/* <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-20 left-10 h-px w-64 border-t border-dashed border-blue-300" />
         <div className="absolute top-24 right-10 h-px w-64 border-t border-dashed border-blue-300" />
-      </div>
+      </div> */}
+
+      {/* <div
+        className="absolute inset-0 -z-1 bg-contain bg-top bg-no-repeat "
+        style={{
+          backgroundImage: "url('/images/home/hero-bg.png')",
+        }}
+      /> */}
+
+      {/* Gradient Overlay */}
+      <div className="absolute inset-0 -z-10 bg-[linear-gradient(180deg,#EEF4FF_0%,#F8FAFF_45%,#FDF2F2_85%,white_65%)]" />
 
       <div className="mx-auto max-w-7xl px-6 pt-28 pb-20 text-center">
         {/* Integrations Icons */}
@@ -54,7 +61,7 @@ export function Hero() {
         <div className="relative mt-20">
           <div className="mx-auto max-w-5xl rounded-2xl bg-white shadow-2xl ring-1 ring-slate-200">
             <Image
-              src="https://res.cloudinary.com/dxfk1lmpg/image/upload/v1768223031/Chatbot_Banner_wuqaes.png"
+              src="/images/home/hero-section.png"
               alt="AI Chatbot Dashboard"
               width={1200}
               height={700}
