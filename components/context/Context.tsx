@@ -129,7 +129,7 @@ export default function Context() {
       {/* CTA */}
       <section className="bg-white">
         <div className="max-w-7xl mx-auto px-6 py-16">
-          <div className="grid md:context-cta-grid gap-8">
+          <div className="grid md:grid-cols-[1fr_2fr] gap-8">
             <div className="relative rounded-2xl context-cta-left p-10 flex items-center justify-center">
               <div className="absolute inset-0 rounded-2xl context-radial-bg" />
               <Image

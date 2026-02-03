@@ -100,9 +100,7 @@ body {
   }
 
   /* CTA GRID */
-  .context-cta-grid {
-    grid-template-columns: 1fr 2fr;
-  }
+ 
   .faq-container {
     max-width: 56rem; /* ~900px */
   }

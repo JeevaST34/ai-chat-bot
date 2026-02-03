@@ -186,7 +186,7 @@ export function Features() {
             return (
               <div
                 key={item.title}
-                className="group cursor-pointer rounded-2xl border border-gray-200 bg-white transition hover:shadow-[0_10px_30px_rgba(0,0,0,0.06)] overflow-hidden"
+                className="group cursor-pointer rounded-xl border border-gray-200 bg-white transition hover:shadow-[0_10px_30px_rgba(0,0,0,0.06)] overflow-hidden"
               >
                 {/* Content (WITH padding) */}
                 <div className="p-4">
@@ -208,14 +208,16 @@ export function Features() {
                 </div>
 
                 {/* Image Preview (NO padding) */}
-                <div className={`relative h-50 `}>
-                  <Image
-                    src={item.image}
-                    alt={item.title}
-                    width={400}
-                    height={160}
-                    className="absolute inset-0 mx-auto h-full object-contain"
-                  />
+                <div className={`p-2 ${item.gradient}`}>
+                  <div className={`relative h-50`}>
+                    <Image
+                      src={item.image}
+                      alt={item.title}
+                      width={1200}
+                      height={400}
+                      className="absolute inset-0 mx-auto h-full object-fill"
+                    />
+                  </div>
                 </div>
               </div>
             );

@@ -58,8 +58,8 @@ export function Card({
         <Image
           src={imageSrc}
           alt={title ?? "Card image"}
-          width={400}
-          height={300}
+          width={1200}
+          height={400}
           className="w-full h-auto rounded-md"
         />
       </div>

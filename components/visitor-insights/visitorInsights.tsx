@@ -26,8 +26,8 @@ export function VisitorInsights() {
             <Image
               src="/images/visitor/visitordashboard.png"
               alt="Visitor analytics dashboard"
-              width={800}
-              height={450}
+              width={1200}
+              height={400}
               className="w-full rounded-xl"
             />
           </div>
@@ -127,8 +127,8 @@ export function VisitorInsights() {
           <Image
             src="/images/visitor/chatHistory.png"
             alt="Chat History"
-            width={800}
-            height={450}
+            width={1500}
+            height={800}
             className="img-fluid rounded-xl mx-auto"
           />
         </div>

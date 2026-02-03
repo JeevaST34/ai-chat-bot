@@ -26,9 +26,9 @@ export default function AnalyticsDashboard() {
             <Image
               src="/images/analytics/analytic-hero.png"
               alt="Analytics hero"
-              className="w-full rounded-xl"
-              width={400}
-              height={400}
+              width={1200}
+              height={600}
+              className="w-full h-auto rounded-xl"
             />
           </div>
         </div>
