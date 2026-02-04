@@ -697,9 +697,10 @@ export const ContextFeatures = [
       "Language models reason entirely within the context you provide. Advanced context design ensures clarity, reduces AI hallucinations, and creates consistent, reliable conversational experiences[citation:2].",
     points: [
       "Reduces hallucinations by 70%+ with proper grounding",
-      "Reduces hallucinations by 70%+ with proper grounding",
+
       "Aligns AI responses with specific business goals",
       "Enables personalized, adaptive interactions",
+      "Improves response consistency across long conversations",
     ],
     image: "/images/context/z-pattern-1.png",
   },

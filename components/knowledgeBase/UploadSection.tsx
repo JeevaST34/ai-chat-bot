@@ -16,7 +16,15 @@ export const UploadSection = () => {
         {/* Upload Box */}
         <div className="mt-8 knowledge-base-upload-box text-white p-10 md:p-12 rounded-2xl shadow-lg w-full cursor-pointer transition hover:opacity-90">
           <div className="flex flex-col items-center justify-center">
-            <div className="text-4xl mb-4">⬆️</div>
+            <div className="text-4xl mb-4">
+              <Image
+                src="/images/knowledgeBase/upload-img.png"
+                alt="Upload Document Here"
+                width={100}
+                height={100}
+                className="img-fluid"
+              />
+            </div>
 
             <p className="text-xl font-semibold text-center">
               Drop files or click to upload

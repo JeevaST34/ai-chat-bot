@@ -137,7 +137,7 @@ export default function Context() {
                 alt="Chatbot UI"
                 width={400}
                 height={300}
-                className="relative z-10 max-w-xs"
+                className="relative z-10 max-w-xs w-full"
               />
             </div>
 
