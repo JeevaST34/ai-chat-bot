@@ -7,13 +7,13 @@ export function VisitorInsights() {
   return (
     <div className="w-full min-h-screen bg-white">
       {/* ================= HERO ================= */}
-      <section className="bg-[linear-gradient(180deg,#EEF4FF_0%,#F8FAFF_45%,#FDF2F2_85%,white_65%)]">
+      <section className="bg-[linear-gradient(180deg,#F2F3FF_0%,#F7F7FF_45%,#FBFBFF_85%,white_65%)]">
         <div className="max-w-7xl mx-auto px-6 pt-20 text-center">
-          <p className="text-sm font-medium text-blue-600">
+          <p className="text-sm font-medium text-[var(--foundation-blue-blue-600)]">
             AI Powered Platform
           </p>
 
-          <h1 className="mt-4 text-4xl font-bold text-gray-900">
+          <h1 className="mt-4 text-4xl xl:text-[48px] font-bold text-gray-900">
             Visitor Insights Dashboard
           </h1>
 
@@ -37,12 +37,11 @@ export function VisitorInsights() {
       {/* ================= AI PROFILES ================= */}
       <section className="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 lg:grid-cols-2 lg:gap-12 items-center">
         <div className="lg:text-left text-center">
-          <h2 className="text-3xl font-bold text-gray-900">
-            AI-Generated Visitor Profiles
+          <h2 className="text-3xl xl:text-[53px] font-bold text-gray-900">
+          AI-Generated Visitor Profiles That Understand Every User
           </h2>
-          <p className="mt-4 text-gray-500 max-w-md mx-auto lg:mx-0">
-            Automatically build visitor profiles from chatbot conversations and
-            behavior.
+          <p className="mt-4 text-gray-500 max-w-md mx-auto lg:mx-0 xl:text-[20px] text-[16px]">
+          AI-generated visitor profiles based on interaction patterns, demographics, and behavior. Each profile helps personalize conversations and predict needs.
           </p>
         </div>
 
@@ -77,10 +76,10 @@ export function VisitorInsights() {
 
         <div className="order-1 lg:order-2 ">
           <div className="lg:text-left text-center">
-            <h2 className="text-3xl font-bold text-gray-900">
+            <h2 className="text-3xl xl:text-[53px] font-bold text-gray-900">
               Why Our Visitor Insight AI Stands Out
             </h2>
-            <p className="mt-4 text-gray-500 max-w-md mx-auto lg:mx-0">
+            <p className="mt-4 text-gray-500 max-w-md mx-auto lg:mx-0 xl:text-[20px] text-[16px]">
               Understand visitor intent instantly and turn conversations into
               insights and conversions.
             </p>
@@ -100,7 +99,7 @@ export function VisitorInsights() {
           <h2 className="text-center text-3xl font-bold text-white">
             Actionable Insights
           </h2>
-          <p className="mt-4 text-center text-blue-100 max-w-xl mx-auto">
+          <p className="mt-4 text-center text-[var(--foundation-blue-blue-100)] max-w-xl mx-auto">
             AI-generated insights help support and sales teams prioritize
             efforts and improve conversions.
           </p>

@@ -24,7 +24,7 @@ export function VendorComparison() {
               Here are the top 5 leading vendors compared
             </h2>
 
-            <p className="text-sm md:text-base leading-relaxed text-slate-500">
+            <p className="text-sm md:text-base leading-relaxed text-[var(--foundation-blue-blue-50)]0">
               Compare the top 5 leading customer support platforms and see how
               they embed AI in their solutions.
             </p>
@@ -45,7 +45,7 @@ export function VendorComparison() {
         <div className="relative overflow-x-auto">
           <table className="w-full border-collapse text-center home-vendor-table">
             <thead>
-              <tr className="border-b border-slate-200">
+              <tr className="border-b border-[var(--foundation-blue-blue-100)]">
                 <th className="py-6 text-left text-sm font-medium home-vendor-muted" />
                 {vendors.map((vendor) => (
                   <th
@@ -62,7 +62,7 @@ export function VendorComparison() {
               {VendorComparisonFeatures.map((row) => (
                 <tr
                   key={row.name}
-                  className="border-b border-slate-200 last:border-none"
+                  className="border-b border-[var(--foundation-blue-blue-100)] last:border-none"
                 >
                   <td className="py-6 text-left text-sm font-medium home-vendor-muted">
                     {row.name}
@@ -71,11 +71,11 @@ export function VendorComparison() {
                   {row.values.map((value, i) => (
                     <td key={i} className="py-6">
                       {value ? (
-                        <span className="inline-flex home-vendor-icon rounded-full bg-blue-600 items-center justify-center">
+                        <span className="inline-flex home-vendor-icon rounded-full bg-[var(--foundation-blue-blue-600)] items-center justify-center">
                           <Check size={14} className="text-white stroke-2" />
                         </span>
                       ) : (
-                        <span className="inline-flex home-vendor-icon rounded-full bg-slate-200 items-center justify-center">
+                        <span className="inline-flex home-vendor-icon rounded-full bg-[var(--foundation-blue-blue-100)] items-center justify-center">
                           <X size={14} className="text-slate-400 stroke-2" />
                         </span>
                       )}
@@ -85,7 +85,7 @@ export function VendorComparison() {
               ))}
 
               {/* CTA ROW */}
-              <tr>
+              {/* <tr>
                 <td className="py-6 text-left text-sm font-medium home-vendor-muted">
                   See detailed comparison
                 </td>
@@ -98,7 +98,7 @@ export function VendorComparison() {
                     Learn more
                   </td>
                 ))}
-              </tr>
+              </tr> */}
             </tbody>
           </table>
         </div>

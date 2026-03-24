@@ -25,7 +25,7 @@ export function HeroWithPreview({
           {/* BADGE */}
           {badge && (
             <div className="flex justify-center mb-6">
-              <span className="inline-flex items-center gap-2 rounded-full bg-white px-4 py-1 text-xs font-medium text-blue-600 shadow-sm">
+              <span className="inline-flex items-center gap-2 rounded-full bg-white px-4 py-1 text-xs font-medium text-[var(--foundation-blue-blue-600)] shadow-sm">
                 ✨ {badge}
               </span>
             </div>

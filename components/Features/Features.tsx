@@ -1,10 +1,11 @@
 "use client";
 
-import { Check, ArrowUpRight } from "lucide-react";
+import { Check, ArrowUpRight, BarChart2, Users, FileText, Code2, Eye, CreditCard, Brain, Zap, BookOpen, DollarSign } from "lucide-react";
 
 import { otherFeatures } from "@/lib/Constants";
 import Image from "next/image";
 import { primaryFeatures } from "@/lib/Constants";
+import { Button } from "../common";
 /* ---------------------------------- */
 /* DATA CONFIG */
 /* ---------------------------------- */
@@ -17,213 +18,364 @@ const bulletPoints = [
   "Learning from Conversations",
 ];
 
+const features = [
+  {
+    icon: BarChart2,
+    iconBg: "bg-blue-100",
+    iconColor: "text-blue-500",
+    title: "Multi-Tenant Dashboard",
+    desc: "Track tenants, active users, documents, chat sessions, total requests, response time, total cost, and average token count — with weekly activity and cost overview insights.",
+    tags: ["Weekly activity", "Cost overview", "Usage metrics"],
+  },
+  {
+    icon: Users,
+    iconBg: "bg-blue-100",
+    iconColor: "text-blue-400",
+    title: "User Management",
+    desc: "Let each tenant create and manage users within the same company, enabling team collaboration, access control, and shared operational ownership.",
+    tags: ["Team access", "Company-level users"],
+  },
+  {
+    icon: FileText,
+    iconBg: "bg-green-100",
+    iconColor: "text-green-500",
+    title: "Document Management",
+    desc: "Upload company-specific documents and organize them using master categories so your chatbot can operate with a structured, scalable knowledge base.",
+    tags: ["Knowledge base", "Master categories"],
+  },
+  {
+    icon: Code2,
+    iconBg: "bg-purple-100",
+    iconColor: "text-purple-500",
+    title: "Widget Code Integration",
+    desc: "Add your chatbot to websites or applications in minutes using simple script-based widget code. Fast deployment, low-code setup, and production-ready.",
+    tags: ["Embed widget", "Low-code setup"],
+  },
+  {
+    icon: Eye,
+    iconBg: "bg-yellow-100",
+    iconColor: "text-yellow-500",
+    title: "Visitor Intelligence",
+    desc: "Save conversations, track visitor profiles, and retain interaction context so teams can understand behavior, improve responses, and build better customer experiences.",
+    tags: ["Visitor tracking", "Conversation history"],
+  },
+  {
+    icon: CreditCard,
+    iconBg: "bg-pink-100",
+    iconColor: "text-pink-500",
+    title: "Billing & Settings",
+    desc: "Manage subscription settings, access invoices for pricing plans, and keep billing centralized for finance, operations, and admin teams.",
+    tags: ["Invoices", "Subscription plans"],
+  },
+];
+
+const checkItems = [
+  {
+    title: "Operational visibility",
+    desc: "Track tenants, users, sessions, requests, and usage from a single view.",
+  },
+  {
+    title: "Performance monitoring",
+    desc: "Understand response times, token averages, and overall efficiency.",
+  },
+  {
+    title: "Cost awareness",
+    desc: "See usage-driven cost patterns and make better scaling decisions.",
+  },
+];
+
+const stats = [
+  { label: "DOCUMENTS", value: "842" },
+  { label: "CHAT SESSIONS", value: "3.8k" },
+];
+
+const bottomStats = [
+  { label: "REQUESTS", value: "18.4k" },
+  { label: "AVG TOKENS", value: "1.8k" },
+  { label: "AVG RESP.", value: "104ms" },
+];
+
+const featuresTeam = [
+  {
+    icon: Brain,
+    iconBg: "bg-pink-100",
+    iconColor: "text-pink-400",
+    title: "Unified AI operations",
+    desc: "Manage users, tenants, documents, and analytics in one connected control center.",
+  },
+  {
+    icon: Zap,
+    iconBg: "bg-blue-100",
+    iconColor: "text-blue-400",
+    title: "Faster deployment",
+    desc: "Launch your chatbot anywhere with simple widget scripts and low-code integration.",
+  },
+  {
+    icon: BookOpen,
+    iconBg: "bg-teal-100",
+    iconColor: "text-teal-500",
+    title: "Structured knowledge",
+    desc: "Organize documents by company and category so your chatbot stays accurate and scalable.",
+  },
+  {
+    icon: DollarSign,
+    iconBg: "bg-yellow-100",
+    iconColor: "text-yellow-500",
+    title: "Usage & cost visibility",
+    desc: "Understand performance, usage trends, visitor context, and cost in real time.",
+  },
+];
+
+
 /* ---------------------------------- */
 /* COMPONENT */
 /* ---------------------------------- */
 
 export function Features() {
   return (
-    <section className="bg-white">
       <div className="max-w-7xl mx-auto px-8 py-16">
-        {/* Header */}
-        <div className="text-center mb-14">
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
-            AI Chatbot solutions for outstanding <br /> customer support
-          </h1>
-          <p className="mt-4 text-gray-500 max-w-2xl mx-auto">
-            Automate conversations, resolve issues faster, and scale support
-            with AI-powered chatbots.
-          </p>
-        </div>
+        {/* hero  */}
+        <section className="py-16">  
+         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+             {/* Text Content */}
+                      <div className="text-center md:text-left text-sm">
+                        <p className="mb-3 w-fit border border-gray-800 text-gray-800 text-sm font-medium px-4 py-1.5 rounded-full">
+                          Unified AI Chatbot Operations
+                        </p>
+                        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                          Everything you need to manage and scale AI chatbot operations
+                        </h2>
+                        <p className="text-gray-500 leading-relaxed sm:leading-8 max-w-md mx-auto md:mx-0 mb-4">
+                        Manage tenants, users, documents, analytics, visitor intelligence, widget deployment, subscriptions, and billing — all from one unified platform built for modern businesses.
+                        </p>
+                        <div className="flex gap-4 justify-center md:justify-start">
+                          {/* <Button radius="rounded-xl" text="Start Free" height="h-12" /> */}
+                          <a href="/contact" className=" px-4 py-3 rounded-xl border border-gray-300 text-sm font-medium bg-[var(--foundation-blue-blue-50)]
+                            text-gray-700 hover:bg-[var(--foundation-blue-blue-600)] transition cursor-pointer hover:text-white">
+                              Book a demo
+                          </a>
+                        </div>
+                        <div className="flex my-5 gap-2 flex-wrap justify-center md:justify-start">
+                           <p className="text-sm text-gray-900 leading-relaxed sm:leading-8 border border-gray-300 rounded-2xl w-fit px-3">
+                          Multi-tenant ready
+                        </p>
+                         <p className="text-sm text-gray-900 leading-relaxed sm:leading-8 border border-gray-300 rounded-2xl w-fit px-3">
+                          Low-code widget deployment
+                        </p> 
+                        <p className="text-sm text-gray-900 leading-relaxed sm:leading-8  border border-gray-300 rounded-2xl w-fit px-3">
+                          Usage & cost visibility
+                        </p>
+                        </div>
+                      </div>
+          
+                    {/* Image */}
+                    <div className="flex justify-center md:justify-end">
+                      <img
+                        src="/images/features/hero-image.png"
+                        alt="hero-banner"
+                        className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg h-auto"
+                      />
+                    </div>       
+         </div>
+              
+        </section>
 
-        {/* Tabs */}
-        <p className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight text-center mb-16">
-          Core AI Chatbot Capabilities
-        </p>
+        {/* core platform features */}
+        <section className="py-16 bg-white">
+          <div className="max-w-7xl mx-auto px-6">
+            {/* Badge */}
+            <div className="mb-4">
+              <span className="border border-gray-800 text-gray-800 text-sm font-medium px-4 py-1.5 rounded-full">
+                Core Platform Features
+              </span>
+            </div>
 
-        {/* Hero Section */}
-        <div className="grid sm:grid-cols-2 gap-8 md:gap-16 mb-20">
-          <div>
-            <h2 className="md:text-4xl text-2xl font-semibold text-gray-900 leading-tight sm:text-left text-center">
-              Customer Support <br /> All Rounders
+            {/* Heading */}
+            <h2 className="text-4xl font-bold text-gray-900 mb-4 max-w-2xl">
+              Built to run your entire AI chatbot platform
             </h2>
-
-            <div className="flex gap-3 mt-6 sm:justify-start justify-center">
-              <button className="px-6 py-2.5 bg-blue-600 text-white rounded-lg text-sm cursor-pointer hover:bg-blue-700">
-                Pricing
-              </button>
-              <button className="px-6 py-2.5 border rounded-lg text-sm text-gray-700 cursor-pointer hover:bg-gray-50Free">
-                View Plans
-              </button>
-            </div>
-          </div>
-
-          <div>
-            <h3 className="font-semibold text-gray-900 mb-4">
-              Use AI to engage customers instantly, understand intent, and route
-              conversations automatically.
-            </h3>
-
-            <div className="space-y-3 mb-6">
-              {bulletPoints.map((item) => (
-                <div key={item} className="flex items-center gap-3">
-                  <span className="w-5 h-5 flex items-center justify-center rounded-full bg-blue-100">
-                    <Check className="w-3 h-3 text-blue-600" />
-                  </span>
-                  <span className="text-sm text-gray-700">{item}</span>
-                </div>
-              ))}
-            </div>
-
-            <p className="text-sm text-gray-600">
-              Ideal for teams needing a smart support system with Helpdesk,
-              Messengers and AI in one platform.
+            <p className="text-gray-500 text-lg leading-relaxed mb-12 max-w-2xl">
+              Every core capability from the admin platform is reimagined here as a
+              customer-facing product advantage — from analytics and team access to
+              documents, widget deployment, and billing.
             </p>
-          </div>
-        </div>
 
-        {/* Primary Feature Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-24">
-          {primaryFeatures.map((feature) => {
-            const Icon = feature.icon;
-
-            return (
-              <div key={feature.title} className="group cursor-pointer">
-                <div
-                  className={`
-            relative rounded-[28px] p-5
-            shadow-[0_10px_45px_rgba(0,0,0,0.08)]
-            transition-all duration-300
-            group-hover:-translate-y-1
-            ${feature.cardBg}
-          `}
-                >
-                  {/* Arrow */}
-                  <div className="absolute top-4 right-4 w-9 h-9 rounded-full bg-white border border-gray-200 flex items-center justify-center">
-                    <ArrowUpRight className="w-4 h-4 text-gray-600" />
-                  </div>
-
-                  {/* Icon */}
+            {/* Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {features.map((item, i) => {
+                const Icon = item.icon;
+                return (
                   <div
-                    className={`w-12 h-12 rounded-xl flex items-center justify-center mb-4 ${feature.iconBg}`}
+                    key={i}
+                    className="bg-white border border-gray-200 rounded-2xl p-6 flex flex-col hover:shadow-md transition"
                   >
-                    <Icon className="w-6 h-6 text-white" />
+                    {/* Icon badge */}
+                    <div
+                      className={`w-12 h-12 rounded-xl flex items-center justify-center mb-5 ${item.iconBg}`}
+                    >
+                      <Icon className={`w-5 h-5 ${item.iconColor}`} strokeWidth={2.5} />
+                    </div>
+
+                    {/* Title */}
+                    <h3 className="font-bold text-gray-900 text-lg mb-2">
+                      {item.title}
+                    </h3>
+
+                    {/* Description */}
+                    <p className="text-gray-500 text-sm leading-relaxed mb-5 flex-1">
+                      {item.desc}
+                    </p>
+
+                    {/* Tags */}
+                    <div className="flex flex-wrap gap-2 mt-auto">
+                      {item.tags.map((tag, j) => (
+                        <span
+                          key={j}
+                          className="text-xs text-gray-600 border border-gray-200 rounded-full px-3 py-1 bg-gray-50"
+                        >
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
                   </div>
+                );
+              })}
+            </div>
+          </div>
+        </section>
 
-                  {/* Title */}
-                  <h3 className="text-[17px] font-semibold text-gray-900 mb-1">
-                    {feature.title}
-                  </h3>
+        {/* product preview */}
+        <section className="py-16 ">
+           <div className="max-w-7xl mx-auto px-6">
+              <div className="bg-white rounded-3xl border border-gray-200 p-10 flex flex-col lg:flex-row gap-10 items-center">
+                {/* Left: Text */}
+                <div className="flex-1">
+                  <span className="border border-gray-800 text-gray-800 text-sm font-medium px-4 py-1.5 rounded-full inline-block mb-6">
+                    Product Preview
+                  </span>
 
-                  {/* Description */}
-                  <p className="text-sm text-gray-600 leading-relaxed mb-4">
-                    {feature.description}
+                  <h2 className="text-4xl font-bold text-gray-900 mb-4 leading-tight">
+                    A clear view of AI chatbot performance and operations
+                  </h2>
+
+                  <p className="text-gray-500 text-base leading-relaxed mb-8">
+                    Monitor KPI metrics, weekly activity, cost trends, request volume,
+                    and performance indicators in one premium dashboard experience
+                    designed for fast decision-making.
                   </p>
 
-                  {/* Preview container */}
-                  <div className={`rounded-2xl p-4 ${feature.previewBg}`}>
-                    <div className="bg-white rounded-xl shadow-sm p-3">
-                      {/* Header */}
-                      <div className="flex items-center justify-between mb-3">
-                        <span className="text-xs font-semibold text-gray-700">
-                          Inbox
-                        </span>
-                        <span className="text-xs text-gray-400">
-                          All channels
-                        </span>
-                      </div>
-
-                      {/* Chat list */}
-                      <div className="space-y-2">
-                        <div className="flex items-center gap-2 rounded-lg px-2 py-1.5 hover:bg-gray-50">
-                          <div className="w-7 h-7 rounded-full bg-gray-200" />
-                          <div className="flex-1">
-                            <p className="text-xs font-medium text-gray-700">
-                              Roydn Aminoff
-                            </p>
-                            <p className="text-[11px] text-gray-400 truncate">
-                              Please provide more info…
-                            </p>
-                          </div>
-                          <span className="text-[10px] text-gray-400">2h</span>
+                  <ul className="flex flex-col gap-4">
+                    {checkItems.map((item, i) => (
+                      <li key={i} className="flex items-start gap-3">
+                        <Check className="w-4 h-4 text-gray-700 mt-1 flex-shrink-0" strokeWidth={2.5} />
+                        <div>
+                          <p className="font-semibold text-gray-900 text-sm">{item.title}</p>
+                          <p className="text-gray-500 text-sm">{item.desc}</p>
                         </div>
-
-                        <div className="flex items-center gap-2 rounded-lg px-2 py-1.5 hover:bg-gray-50">
-                          <div className="w-7 h-7 rounded-full bg-gray-200" />
-                          <div className="flex-1">
-                            <p className="text-xs font-medium text-gray-700">
-                              Angel Dodds
-                            </p>
-                            <p className="text-[11px] text-gray-400 truncate">
-                              Thanks for the update
-                            </p>
-                          </div>
-                          <span className="text-[10px] text-gray-400">5h</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
-              </div>
-            );
-          })}
-        </div>
 
-        {/* Other Features */}
-        <div className="text-center mb-10">
-          <h2 className="text-3xl font-bold text-gray-900">
-            Advanced AI Chatbot features
-          </h2>
-          <p className="text-sm text-gray-500 mt-2">
-            Extra capabilities to streamline your workflows
-          </p>
-        </div>
+                {/* Right: Dashboard Preview */}
+                <div className="flex-1 bg-gray-50 rounded-2xl border border-gray-200 p-5 flex flex-col gap-3">
+                  {/* Top stats */}
+                  <div className="grid grid-cols-2 gap-3">
+                    {stats.map((s, i) => (
+                      <div key={i} className="bg-white rounded-xl p-4 border border-gray-100">
+                        <p className="text-xs text-gray-400 font-semibold tracking-widest mb-1">
+                          {s.label}
+                        </p>
+                        <p className="text-3xl font-bold text-gray-900">{s.value}</p>
+                      </div>
+                    ))}
+                  </div>
 
-        <div className="grid lg:grid-cols-4 sm:grid-cols-2  gap-6">
-          {otherFeatures.map((item) => {
-            const Icon = item.icon;
+                  {/* Chart card */}
+                  <div className="bg-white rounded-xl p-4 border border-gray-100">
+                    <div className="flex items-center justify-between mb-1">
+                      <div>
+                        <p className="text-sm font-semibold text-gray-800">Cost Overview</p>
+                        <p className="text-xs text-gray-400">Monthly trend</p>
+                      </div>
+                      <span className="text-xs bg-green-100 text-green-600 font-medium px-3 py-1 rounded-full">
+                        Stable
+                      </span>
+                    </div>
 
-            return (
-              <div
-                key={item.title}
-                className="group cursor-pointer rounded-xl border border-gray-200 bg-white transition hover:shadow-[0_10px_30px_rgba(0,0,0,0.06)] overflow-hidden"
-              >
-                {/* Content (WITH padding) */}
-                <div className="p-4">
-                  <div className="flex items-center gap-3 mb-3">
-                    <div
-                      className={`w-9 h-9 rounded-lg flex items-center justify-center ${item.iconBg}`}
-                    >
-                      <Icon
-                        className={`w-5 h-5 ${
-                          item.dark ? "text-white" : "text-white"
-                        }`}
+                    {/* SVG Chart */}
+                    <svg viewBox="0 0 300 80" className="w-full mt-3" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M0,60 C30,55 60,30 90,28 C120,26 150,20 180,22 C210,24 240,45 270,40 C285,37 295,35 300,33"
+                        fill="none"
+                        stroke="#6366f1"
+                        strokeWidth="2"
+                        strokeLinecap="round"
                       />
-                    </div>
-
-                    <h4 className="text-sm font-semibold text-gray-900">
-                      {item.title}
-                    </h4>
+                    </svg>
                   </div>
-                </div>
 
-                {/* Image Preview (NO padding) */}
-                <div className={`p-2 ${item.gradient}`}>
-                  <div className={`relative h-50`}>
-                    <Image
-                      src={item.image}
-                      alt={item.title}
-                      width={1200}
-                      height={400}
-                      className="absolute inset-0 mx-auto h-full object-fill"
-                    />
+                  {/* Bottom stats */}
+                  <div className="grid grid-cols-3 gap-3">
+                    {bottomStats.map((s, i) => (
+                      <div key={i} className="bg-white rounded-xl p-4 border border-gray-100">
+                        <p className="text-xs text-gray-400 font-semibold tracking-widest mb-1">
+                          {s.label}
+                        </p>
+                        <p className="text-xl font-bold text-gray-900">{s.value}</p>
+                      </div>
+                    ))}
                   </div>
                 </div>
               </div>
-            );
-          })}
-        </div>
+           </div>
+        </section>
+
+        {/* why team choose us */}
+        <section className="py-16 bg-white">
+          <div className="max-w-7xl mx-auto px-6 text-center">
+            {/* Badge */}
+            <div className="flex justify-center mb-5">
+              <span className="border border-gray-800 text-gray-800 text-sm font-medium px-4 py-1.5 rounded-full">
+                Why Teams Choose Us
+              </span>
+            </div>
+
+            {/* Heading */}
+            <h2 className="text-4xl font-bold text-gray-900 mb-4 max-w-2xl mx-auto leading-tight">
+              One platform for operations, deployment, and insight
+            </h2>
+
+            <p className="text-gray-500 text-base mb-12 max-w-xl mx-auto">
+              Replace fragmented tools with one connected platform for AI chatbot management.
+            </p>
+
+            {/* Cards */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 text-left">
+              {featuresTeam.map((item, i) => {
+                const Icon = item.icon;
+                return (
+                  <div
+                    key={i}
+                    className="bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-md transition flex flex-col"
+                  >
+                    <div
+                      className={`w-12 h-12 rounded-xl flex items-center justify-center mb-5 ${item.iconBg}`}
+                    >
+                      <Icon className={`w-5 h-5 ${item.iconColor}`} strokeWidth={2.5} />
+                    </div>
+                    <h3 className="font-bold text-gray-900 text-base mb-2">
+                      {item.title}
+                    </h3>
+                    <p className="text-gray-500 text-sm leading-relaxed">
+                      {item.desc}
+                    </p>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </section>
       </div>
-    </section>
   );
 }

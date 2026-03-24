@@ -27,7 +27,7 @@ export function BrandMarquee() {
     <section className="py-16 bg-white">
       {/* Title */}
       <h2 className="md:text-4xl text-2xl font-bold text-center mb-4 text-black">
-        Trusted by <span className="text-blue-600">350+</span> Global Brands
+        Trusted by <span className="text-[var(--foundation-blue-blue-600)]">350+</span> Global Brands
       </h2>
       <p className="text-gray-500 text-center mb-10 max-w-2xl mx-auto">
         Trusted by fast-growing teams and global brands to automate customer
@@ -43,8 +43,8 @@ export function BrandMarquee() {
             className={`px-4 py-2 rounded-full text-sm font-medium transition
               ${
                 activeTab === tab
-                  ? "bg-blue-600 text-white"
-                  : "bg-blue-50 text-blue-600 hover:bg-blue-100"
+                  ? "bg-[var(--foundation-blue-blue-600)] text-white"
+                  : "bg-[var(--foundation-blue-blue-50)] text-[var(--foundation-blue-blue-600)] hover:bg-[var(--foundation-blue-blue-100)]"
               }
             `}
           >

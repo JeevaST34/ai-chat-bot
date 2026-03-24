@@ -6,7 +6,7 @@ export function Button({
   height = "h-12",
   width = "w-fit",
   textColor = "text-white",
-  bgColor = "bg-gradient-to-r from-blue-500 to-blue-600",
+  bgColor = "bg-[#5856d6]",
   fontSize = "text-base font-semibold",
   padding = "px-6",
   radius = "rounded-full",

@@ -32,7 +32,7 @@ export const PageHeader = ({ title, subtitle }: PageHeaderProps) => (
 // Section Wrapper
 export const SectionHeader = ({ title, children }: SectionHeaderProps) => (
   <section className="mt-10">
-    <h2 className="text-blue-800 font-semibold text-2xl mb-3">{title}</h2>
+    <h2 className="text-[var(--foundation-blue-blue-800)] font-semibold text-2xl mb-3">{title}</h2>
     {children}
   </section>
 );

@@ -22,9 +22,9 @@ export default function CTASection() {
           </p>
 
           {/* CTA Button */}
-          <button className="h-10 px-5 rounded-md bg-green-500 hover:bg-green-600 text-white text-sm font-semibold transition mb-10">
+          <a href="/contact" className="px-5 py-3 rounded-md bg-[var(--foundation-blue-blue-50)]0 hover:bg-[var(--foundation-blue-blue-600)] text-white text-sm font-semibold transition mb-10 ring-1 ring-white/20">
             Schedule a Demo
-          </button>
+          </a>
 
           {/* Badges */}
           <div className="flex items-center justify-center gap-5 flex-wrap">

@@ -14,7 +14,7 @@ export default function PricingPage() {
       <UploadSection />
       <VersionControlSection />
       <BenefitsSection />
-      <SmartTagging />
+      {/* <SmartTagging /> */}
 
     </>
   );

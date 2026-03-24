@@ -145,7 +145,7 @@ export const otherFeatures = [
     title: "Chat Flows",
     icon: Workflow,
     gradient: "bg-[#E0E7FF]",
-    iconBg: "bg-indigo-600",
+    iconBg: "bg-[var(--foundation-blue-blue-600)]",
     image: "/images/features/card-3.png",
     dark: true,
   },
@@ -262,7 +262,7 @@ export const stats = [
     change: "+24% this month",
     changeColor: "text-green-500",
     icon: "⚡",
-    bg: "bg-gradient-to-br from-blue-50 to-white",
+    bg: "bg-gradient-to-br from-[var(--foundation-blue-blue-50)] to-white",
   },
   {
     value: "98.6%",
@@ -351,9 +351,9 @@ export const primaryFeatures = [
     title: "Helpdesk",
     description: "AI + human conversations in one smart inbox.",
     icon: Headphones,
-    iconBg: "bg-indigo-600",
-    cardBg: "bg-indigo-50",
-    previewBg: "bg-indigo-100",
+    iconBg: "bg-[var(--foundation-blue-blue-600)]",
+    cardBg: "bg-[var(--foundation-blue-blue-50)]",
+    previewBg: "bg-[var(--foundation-blue-blue-100)]",
     accent: "indigo",
   },
   {
@@ -385,8 +385,8 @@ export const journeyStats = [
   {
     value: "40%",
     label: "reduction in support workload",
-    bg: "bg-blue-50",
-    border: "border-blue-300",
+    bg: "bg-[var(--foundation-blue-blue-50)]",
+    border: "border-[var(--foundation--blue-blue-300)]",
     icon: "💬",
   },
   {
@@ -427,84 +427,31 @@ export const VendorComparisonFeatures = [
 
 export const integrations = [
   {
+
     icon: "/images/integration/zapier.png",
-    title: "Zapier",
-    desc: "Connect Chatbot with 4000+ apps and automate workflows.",
+
+    title: "Customize Your AI Assistant",
+
+    desc: "Set your welcome message, colors, widget position, and conversation behavior to match your brand.",
+
   },
   {
+
     icon: "/images/integration/webflow.png",
-    title: "Webflow",
-    desc: "Integrate your chatbot in a Webflow website.",
+
+    title: "Choose Your Integration Method",
+
+    desc: "Install with HTML, React, Next.js, or your favorite website builder using our lightweight widget setup.",
+
   },
   {
+
     icon: "/images/integration/wordpress.png",
-    title: "WordPress",
-    desc: "Integrate your chatbot in a WordPress website.",
-  },
-  {
-    icon: "/images/integration/stripe.png",
-    title: "Stripe",
-    desc: "Process transactions inside your chatbot conversations.",
-  },
-  {
-    icon: "/images/integration/slack.png",
-    title: "Slack",
-    desc: "Send Slack notifications from your chatbots.",
-  },
-  {
-    icon: "/images/integration/shopify.png",
-    title: "Shopify",
-    desc: "Integrate your chatbot in a Shopify website.",
-  },
-  {
-    icon: "/images/integration/calendly.png",
-    title: "Calendly",
-    desc: "Book meetings through your chatbots.",
-  },
-  {
-    icon: "/images/integration/segment.png",
-    title: "Segment",
-    desc: "Track users & events inside your chatbots.",
-  },
-  {
-    icon: "/images/integration/sendgrid.png",
-    title: "SendGrid",
-    desc: "Send emails directly from your chatbots.",
-  },
-  {
-    icon: "/images/integration/dialogflow.png",
-    title: "Dialogflow",
-    desc: "Build sophisticated chatbots using NLP.",
-  },
-  {
-    icon: "/images/integration/googlesheets.png",
-    title: "Google Sheets",
-    desc: "Add, update, and retrieve data during conversations.",
-  },
-  {
-    icon: "/images/integration/hubspot.png",
-    title: "HubSpot",
-    desc: "Add, update, and get HubSpot data during conversations.",
-  },
-  {
-    icon: "/images/integration/mailchimp.png",
-    title: "Mailchimp",
-    desc: "Collect and send user data to Mailchimp in real-time.",
-  },
-  {
-    icon: "/images/integration/airtable.png",
-    title: "Airtable",
-    desc: "Add, update, and retrieve data during conversations.",
-  },
-  {
-    icon: "/images/integration/carrd.png",
-    title: "Carrd",
-    desc: "Integrate your chatbot in a Carrd website.",
-  },
-  {
-    icon: "/images/integration/n8n.png",
-    title: "n8n",
-    desc: "Connect 500+ integrations to power any Workflow.",
+
+    title: "Go Live in Minutes",
+
+    desc: "Publish your widget, start conversations instantly, and deliver support, lead capture, and engagement 24/7.",
+
   },
 ];
 
@@ -697,12 +644,11 @@ export const ContextFeatures = [
       "Language models reason entirely within the context you provide. Advanced context design ensures clarity, reduces AI hallucinations, and creates consistent, reliable conversational experiences[citation:2].",
     points: [
       "Reduces hallucinations by 70%+ with proper grounding",
-
+      "Preserves natural conversation flow across sessions",
       "Aligns AI responses with specific business goals",
       "Enables personalized, adaptive interactions",
-      "Improves response consistency across long conversations",
     ],
-    image: "/images/context/z-pattern-1.png",
+    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
   },
   {
     title: "Structured Prompt Layers",
@@ -714,7 +660,7 @@ export const ContextFeatures = [
       "Real-time business knowledge retrieval",
       "Conversation memory and history management",
     ],
-    image: "/images/context/z-pattern-2.png",
+    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
   },
   {
     title: "Intelligent Memory Systems",
@@ -726,7 +672,7 @@ export const ContextFeatures = [
       "Vector-based semantic retrieval",
       "Personalized conversation recall",
     ],
-    image: "/images/context/z-pattern-3.png",
+    image: "https://assets.ascendientlearning.com/assets/BlogPost/1__FillWzEyODAsNzIwXQ.jpg",
   },
 ];
 

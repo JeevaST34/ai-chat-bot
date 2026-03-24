@@ -75,7 +75,7 @@ export function Footer() {
         <div className="sm:flex mx-auto lg:gap-10 gap-15 pt-5">
           {/* Company */}
           <div className="mb-3">
-            <h4 className="text-blue-700 font-bold mb-4">Company</h4>
+            <h4 className="text-[var(--foundation--blue-blue-700)] font-bold mb-4">Company</h4>
             <ul className="space-y-2 text-black ">
               <li className="cursor-pointer hover:underline">
                 <Link href="/" className="cursor-pointer hover:underline">
@@ -112,7 +112,7 @@ export function Footer() {
 
           {/* Product */}
           <div className="mb-3">
-            <h4 className="text-blue-700 font-bold mb-4">Product</h4>
+            <h4 className="text-[var(--foundation--blue-blue-700)] font-bold mb-4">Product</h4>
             <ul className="space-y-2 text-black">
               <li className="cursor-pointer hover:underline">
                 <Link
@@ -135,7 +135,7 @@ export function Footer() {
 
           {/* Resources */}
           <div className="mb-3">
-            <h4 className="text-blue-700 font-bold mb-4">
+            <h4 className="text-[var(--foundation--blue-blue-700)] font-bold mb-4">
               <Link
                 href="/Resources"
                 className="cursor-pointer hover:underline"
@@ -169,7 +169,7 @@ export function Footer() {
 
           {/* Platform */}
           <div className="mb-3">
-            <h4 className="text-blue-700 font-bold mb-4">Platform</h4>
+            <h4 className="text-[var(--foundation--blue-blue-700)] font-bold mb-4">Platform</h4>
             <ul className="space-y-2 text-black">
               <li className="cursor-pointer hover:underline">
                 <Link
@@ -192,7 +192,7 @@ export function Footer() {
 
           {/* Support */}
           <div className="mb-3">
-            <h4 className="text-blue-700 font-bold mb-4">Support</h4>
+            <h4 className="text-[var(--foundation--blue-blue-700)] font-bold mb-4">Support</h4>
             <ul className="space-y-2 text-black">
               <li className="cursor-pointer hover:underline">
                 <Link href="/faq" className="cursor-pointer hover:underline">
@@ -221,7 +221,7 @@ export function Footer() {
           of cookies for analytics, personalization, and improving our services.
           You can manage or revoke your consent anytime in your browser
           settings. Read our{" "}
-          <span className="text-blue-600 cursor-pointer">Cookies Policy</span>.
+          <span className="text-[var(--foundation-blue-blue-600)] cursor-pointer">Cookies Policy</span>.
         </p>
       </div>
     </footer>

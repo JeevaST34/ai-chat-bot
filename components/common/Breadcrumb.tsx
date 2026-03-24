@@ -27,7 +27,7 @@ export  function Breadcrumb() {
       <div className="max-w-7xl mx-auto px-6 py-4">
         <ol className="flex items-center flex-wrap gap-2 text-sm text-gray-600">
           <li>
-            <Link href="/" className="hover:text-blue-600 font-medium">
+            <Link href="/" className="hover:text-[var(--foundation-blue-blue-600)] font-medium">
               Home
             </Link>
           </li>
@@ -42,7 +42,7 @@ export  function Breadcrumb() {
               ) : (
                 <Link
                   href={crumb.href}
-                  className="hover:text-blue-600 font-medium"
+                  className="hover:text-[var(--foundation-blue-blue-600)] font-medium"
                 >
                   {crumb.label}
                 </Link>

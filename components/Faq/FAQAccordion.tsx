@@ -20,14 +20,14 @@ export default function FAQAccordion() {
             Frequently Asked Questions
           </h2>
 
-          <p className="text-slate-500 text-base faq-header-width mx-auto">
+          <p className="text-[var(--foundation-blue-blue-50)]0 text-base faq-header-width mx-auto">
             Quick answers to common questions about using AI Chatbot to automate
             customer conversations.
           </p>
         </div>
 
         {/* FAQ List */}
-        <div className="divide-y divide-slate-200">
+        <div className="divide-y divide-[var(--foundation-blue-blue-100)]">
           {faqs.map((faq, index) => {
             const isOpen = openIndex === index;
 

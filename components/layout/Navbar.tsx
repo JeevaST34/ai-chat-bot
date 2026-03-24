@@ -21,14 +21,14 @@ export function Navbar() {
   const linkClass = (href: string) =>
     `text-[14px] font-medium transition ${
       pathname === href
-        ? "text-[#1E6BFF]"
-        : "text-gray-700 hover:text-[#1E6BFF]"
+        ? "text-[#5856d6]"
+        : "text-gray-700 hover:text-[#5856d6]"
     }`;
 
   return (
     <header className="w-full">
       {/* 🔹 Announcement Bar */}
-      <div className="bg-[#1E6BFF] py-2">
+      <div className="bg-[#5856d6] py-2">
         <div className="max-w-7xl mx-auto px-4 flex items-center justify-center gap-3 flex-wrap">
           <p className="text-white text-[13px] font-medium text-center">
             AI Chatbot: Human-Like Agent Voices for Real Conversations, Sales &
@@ -36,7 +36,7 @@ export function Navbar() {
           </p>
           <Link
             href="/contact"
-            className="bg-white text-[#1E6BFF] text-[12px] font-semibold px-3 py-1 rounded-full hover:bg-blue-50 transition"
+            className="bg-white text-[#5856d6] text-[12px] font-semibold px-3 py-1 rounded-full hover:bg-[var(--foundation-blue-blue-50)] transition"
           >
             Check now
           </Link>
@@ -75,13 +75,13 @@ export function Navbar() {
           <div className="hidden lg:flex items-center gap-6">
             <Link
               href="/auth/logIn"
-              className="text-[14px] font-medium text-gray-700 hover:text-[#1E6BFF]"
+              className="text-[14px] font-medium text-gray-700 hover:text-[#5856d6]"
             >
               Login
             </Link>
             <Link
               href="/auth/signUp"
-              className="bg-[#1E6BFF] text-white text-[14px] font-semibold px-5 py-2 rounded-full hover:bg-blue-700 transition"
+              className="bg-[#5856d6] text-white text-[14px] font-semibold px-5 py-2 rounded-full hover:bg-[var(--foundation--blue-blue-700)] transition"
             >
               Sign Up
             </Link>
@@ -151,7 +151,7 @@ export function Navbar() {
                 <Link
                   href="/signUp"
                   onClick={() => setMenuOpen(false)}
-                  className="bg-[#1E6BFF] text-white text-center text-[14px] font-semibold py-2.5 rounded-full"
+                  className="bg-[#5856d6] text-white text-center text-[14px] font-semibold py-2.5 rounded-full"
                 >
                   Sign Up
                 </Link>

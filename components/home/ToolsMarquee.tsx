@@ -34,8 +34,8 @@ export function ToolsMarquee() {
       {/* CENTER HUB */}
       <div className="relative flex justify-center my-14">
         <div className="absolute inset-0 flex justify-center items-center">
-          <div className="w-48 h-48 rounded-full border border-blue-200 animate-pulse" />
-          <div className="w-32 h-32 rounded-full border border-blue-300 absolute" />
+          <div className="w-48 h-48 rounded-full border border-[var(--foundation--blue-blue-200)] animate-pulse" />
+          <div className="w-32 h-32 rounded-full border border-[var(--foundation--blue-blue-300)] absolute" />
         </div>
 
         <div className="relative z-10 w-20 h-20 rounded-2xl home-tools-core flex items-center justify-center shadow-xl">

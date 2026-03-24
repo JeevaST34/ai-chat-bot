@@ -22,9 +22,9 @@ export const InsightCard = ({ title, desc, action, icon: Icon }: Props) => {
     <div
       className="
         flex h-10 w-10 shrink-0 items-center justify-center rounded-lg
-        bg-blue-50 text-blue-600
+        bg-[var(--foundation-blue-blue-50)] text-[var(--foundation-blue-blue-600)]
         transition-all duration-300 ease-out
-        group-hover:bg-blue-600 group-hover:text-white
+        group-hover:bg-[var(--foundation-blue-blue-600)] group-hover:text-white
         group-hover:scale-105
       "
     >
@@ -42,7 +42,7 @@ export const InsightCard = ({ title, desc, action, icon: Icon }: Props) => {
       <a
         href="#"
         className="
-          mt-3 inline-block text-sm font-medium text-blue-600
+          mt-3 inline-block text-sm font-medium text-[var(--foundation-blue-blue-600)]
           transition-all duration-300
           group-hover:translate-x-1 hover:underline
         "

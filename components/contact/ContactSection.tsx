@@ -1,5 +1,14 @@
 "use client";
 
+  import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
+
+const socialLinks = [
+  { icon: Facebook, href: "#" },
+  { icon: Twitter, href: "#" },
+  { icon: Linkedin, href: "#" },
+  { icon: Instagram, href: "#" },
+];
+
 export default function ContactForm() {
   return (
     <section className="w-full bg-[#f5f7fb] py-20">
@@ -18,7 +27,7 @@ export default function ContactForm() {
         {/* Card */}
         <div className="grid grid-cols-1 lg:grid-cols-[420px_1fr] rounded-[14px] overflow-hidden bg-white shadow-sm">
           {/* LEFT PANEL */}
-          <div className="bg-[#0b3f8f] rounded-l-[20px] px-10 py-12 text-white relative overflow-hidden">
+          <div className="bg-[#3b3fa3] rounded-l-[20px] px-10 py-12 text-white relative overflow-hidden">
             {/* Decorative shapes */}
             <div className="absolute top-6 right-6 w-32 h-32 bg-white/5 rounded-xl rotate-45"></div>
             <div className="absolute top-24 right-14 w-20 h-20 bg-white/5 rounded-xl rotate-45"></div>
@@ -110,16 +119,17 @@ export default function ContactForm() {
             </div>
 
             {/* Social Icons */}
-            <div className="flex gap-3 mt-6 ">
-              {["f", "t", "in", "ig", "🌐"].map((icon, i) => (
-                <div
-                  key={i}
-                  className="w-10 h-10 rounded-md bg-white/10 flex items-center justify-center text-[14px] font-semibold cursor-pointer"
-                >
-                  {icon}
-                </div>
-              ))}
-            </div>
+            <div className="flex gap-3 mt-6">
+  {socialLinks.map(({ icon: Icon, href }, i) => (
+    <a
+      key={i}
+      href={href}
+      className="w-10 h-10 rounded-md bg-white/10 flex items-center justify-center hover:bg-white/20 transition duration-300"
+    >
+      <Icon size={16} className="text-white"  />
+    </a>
+  ))}
+</div>
           </div>
 
           {/* RIGHT */}
@@ -135,7 +145,7 @@ export default function ContactForm() {
                   <input
                     type="text"
                     placeholder="Full name"
-                    className="w-full h-12 border border-[#e5e7eb] rounded-md px-4 text-[14px] focus:outline-none focus:border-[#2563eb]"
+                    className="w-full h-12 border border-[#e5e7eb] rounded-md px-4 text-[14px] focus:outline-none focus:border-[#5856d6]"
                   />
                 </div>
 
@@ -146,7 +156,7 @@ export default function ContactForm() {
                   <input
                     type="email"
                     placeholder="Email address"
-                    className="w-full h-12 border border-[#e5e7eb] rounded-md px-4 text-[14px] focus:outline-none focus:border-[#2563eb]"
+                    className="w-full h-12 border border-[#e5e7eb] rounded-md px-4 text-[14px] focus:outline-none focus:border-[#5856d6]"
                   />
                 </div>
               </div>
@@ -159,7 +169,7 @@ export default function ContactForm() {
                 <input
                   type="text"
                   placeholder="Brand/Company/Product Name"
-                  className="w-full h-12 border border-[#e5e7eb] rounded-md px-4 text-[14px] focus:outline-none focus:border-[#2563eb]"
+                  className="w-full h-12 border border-[#e5e7eb] rounded-md px-4 text-[14px] focus:outline-none focus:border-[#5856d6]"
                 />
               </div>
 
@@ -171,14 +181,14 @@ export default function ContactForm() {
                 <textarea
                   rows={4}
                   placeholder="Tell us about your project..."
-                  className="w-full border border-[#e5e7eb] rounded-md px-4 py-3 text-[14px] resize-none focus:outline-none focus:border-[#2563eb]"
+                  className="w-full border border-[#e5e7eb] rounded-md px-4 py-3 text-[14px] resize-none focus:outline-none focus:border-[#5856d6]"
                 />
               </div>
 
               {/* Button */}
               <button
                 type="submit"
-                className="inline-flex items-center gap-2 bg-[#2563eb] text-white text-[14px] font-medium px-6 py-3 rounded-md hover:bg-[#1d4ed8] transition cursor-pointer"
+                className="inline-flex items-center gap-2 bg-[#5856d6] text-white text-[14px] font-medium px-6 py-3 rounded-md hover:bg-[#4b49c4] transition cursor-pointer"
               >
                 Send Message
                 <svg

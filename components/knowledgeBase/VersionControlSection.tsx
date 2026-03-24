@@ -27,7 +27,7 @@ export const VersionControlSection = () => {
             className="bg-white rounded-2xl shadow-lg p-6 md:p-8 border border-gray-100"
           >
             {/* Icon */}
-            <div className="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center text-2xl text-blue-600 mb-4">
+            <div className="w-12 h-12 rounded-xl bg-[var(--foundation-blue-blue-50)] flex items-center justify-center text-2xl text-[var(--foundation-blue-blue-600)] mb-4">
               {item.icon}
             </div>
 
@@ -40,8 +40,8 @@ export const VersionControlSection = () => {
             <p className="text-gray-600 text-sm mt-2">{item.desc}</p>
 
             {/* Time */}
-            <div className="flex items-center gap-2 mt-4 text-sm text-blue-600">
-              <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
+            <div className="flex items-center gap-2 mt-4 text-sm text-[var(--foundation-blue-blue-600)]">
+              <span className="w-2 h-2 bg-[var(--foundation-blue-blue-50)]0 rounded-full"></span>
               {item.time}
             </div>
           </div>
