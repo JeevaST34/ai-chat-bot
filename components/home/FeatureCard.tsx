@@ -55,7 +55,7 @@ export default function FeatureCard({
                 : "justify-start",
           )}
         >
-          <Button text={btnText} />
+          {/* <Button text={btnText} /> */}
         </div>
       </div>
 

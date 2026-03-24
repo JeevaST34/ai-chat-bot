@@ -36,9 +36,9 @@ export function WebsiteBuilders() {
               {item.title}
             </h3>
 
-            <button className="text-gray-400 text-sm hover:underline cursor-pointer">
+            {/* <button className="text-gray-400 text-sm hover:underline cursor-pointer">
               View Integration →
-            </button>
+            </button> */}
           </div>
         ))}
       </div>

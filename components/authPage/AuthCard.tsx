@@ -35,9 +35,9 @@ export default function AuthCard({
         <div className="absolute inset-0 auth-image-overlay" />
 
         {/* Text */}
-        <div className="relative z-10 h-full flex flex-col justify-center px-10 text-white">
+        <div className="relative z-10 h-full flex flex-col justify-end px-10 text-white">
           <h2 className="text-3xl font-bold mb-4">{content[variant].title}</h2>
-          <p className="text-white/80 max-w-sm">
+          <p className="text-white/80 max-w-sm mb-5">
             {content[variant].description}
           </p>
         </div>

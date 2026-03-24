@@ -35,7 +35,7 @@ export function Navbar() {
             Support
           </p>
           <Link
-            href="/checknow"
+            href="/contact"
             className="bg-white text-[#1E6BFF] text-[12px] font-semibold px-3 py-1 rounded-full hover:bg-blue-50 transition"
           >
             Check now

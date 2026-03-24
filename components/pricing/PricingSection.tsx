@@ -151,9 +151,9 @@ export function PricingSection() {
               </ul>
 
               <div className="enterprise-soft-bg rounded-xl p-4 inline-flex gap-4 flex-wrap">
-                <button className="cursor-pointer px-6 py-2 rounded-lg border border-slate-300 text-sm font-medium text-slate-800 hover:bg-white transition">
+                <a href="/contact" className="cursor-pointer px-6 py-2 rounded-lg border border-slate-300 text-sm font-medium text-slate-800 hover:bg-white transition">
                   Let’s talk
-                </button>
+                </a>
                 <button className="cursor-pointer px-6 py-2 rounded-lg bg-blue-600 text-sm font-medium text-white hover:bg-blue-700 transition">
                   Request Enterprise Demo
                 </button>

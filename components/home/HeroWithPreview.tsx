@@ -44,9 +44,9 @@ export function HeroWithPreview({
           )}
 
           {/* CTA */}
-          <div className="flex justify-center mb-14">
+          {/* <div className="flex justify-center mb-14">
             <Button text={buttonText} />
-          </div>
+          </div> */}
 
           {/* IMAGE PREVIEW */}
           <div className="relative mx-auto home-hero-preview">

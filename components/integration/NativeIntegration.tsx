@@ -31,9 +31,9 @@ export function NativeIntegration() {
 
               <p className="text-gray-600 mb-4 leading-relaxed">{item.desc}</p>
 
-              <button className="text-gray-400 text-sm hover:underline mt-auto mr-auto cursor-pointer">
+              {/* <button className="text-gray-400 text-sm hover:underline mt-auto mr-auto cursor-pointer">
                 View integration →
-              </button>
+              </button> */}
             </div>
           ))}
         </div>
