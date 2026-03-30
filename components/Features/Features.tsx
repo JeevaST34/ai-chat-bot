@@ -188,8 +188,7 @@ export function Features() {
               {/* <Button radius="rounded-xl" text="Start Free" height="h-12" /> */}
               <a
                 href="/contact"
-                className=" px-4 py-3 rounded-xl border border-gray-300 dark:border-gray-700 text-sm font-medium bg-[var(--foundation-blue-blue-50)] dark:bg-blue-600
-                            text-gray-700 dark:text-white hover:bg-[var(--foundation-blue-blue-600)] dark:hover:bg-blue-700 transition cursor-pointer"
+                className="inline-flex items-center rounded-2xl border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 px-6 py-3 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200"
               >
                 Book a demo
               </a>

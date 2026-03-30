@@ -31,7 +31,7 @@ export function VisitorInsights() {
             <div className="absolute -inset-1 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             <div className="relative">
               <Image
-                src="/images/visitor/visitordashboard.png"
+                src="/images/visitor/visitordashboard.svg"
                 alt="Visitor analytics dashboard showing real-time visitor behavior and chat interactions"
                 width={1200}
                 height={400}
@@ -151,7 +151,7 @@ export function VisitorInsights() {
           <div className="relative">
             <div className="absolute -inset-1 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             <Image
-              src="/images/visitor/chatHistory.svg"
+              src="/images/visitor/chatHistory.png"
               alt="Chat history and analysis dashboard showing conversation metrics and insights"
               width={1500}
               height={800}

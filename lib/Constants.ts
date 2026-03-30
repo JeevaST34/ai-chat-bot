@@ -674,7 +674,7 @@ export const policyData = {
   title: "Privacy Policy",
   subtitle:
     "We respect your privacy and are committed to protecting your data and maintaining transparency in how information is collected and used.",
-  lastUpdated: "[Date]",
+  lastUpdated: "30/03/2026",
   intro:
     "We value your privacy and are committed to protecting your data while using our ScopeAIChat platform.",
   sections: [
@@ -731,7 +731,7 @@ export const termsConditionsData = {
   title: "Terms & Conditions",
   subtitle:
     "Please read these Terms & Conditions carefully before using our ScopeAIChat platform.",
-  lastUpdated: "[Date]",
+  lastUpdated: "30/03/2026",
   intro:
     'By accessing or using our ScopeAIChat platform ("Service"), you agree to these Terms & Conditions. If you do not agree, please do not use the Service.',
   sections: [

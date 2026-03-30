@@ -200,9 +200,9 @@ export function Footer() {
             <Sparkles className="w-3 h-3 text-blue-500" />
             Made with <Heart className="w-3 h-3 text-red-500 mx-0.5" /> for
             better customer conversations
-            <span className="hidden sm:inline mx-1">•</span>
+            {/* <span className="hidden sm:inline mx-1">•</span>
             <Shield className="w-3 h-3 text-green-500 ml-1" />
-            <span>SOC 2 • GDPR Compliant</span>
+            <span>SOC 2 • GDPR Compliant</span> */}
           </p>
         </div>
 
